@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*==========*/
+/*  
+    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ] Title
+    Example : You want Import Files => Title is Import Files, or Fonts => Title is Fonts
+
+    /*===== Layout Style =====*/
+    /*===== Back To Top =====*/
+    /*===== Preloader =====*/
+    /*===== Header =====*/
+    /*===== Menu Top =====*/
+    /*===== Block =====*/
+    /*===== Block Slider =====*/
+    /*===== Block Products =====*/
+    /*===== Page Common =====*/
+    /*===== Contact =====*/
+    /*===== Promotions =====*/
+    /*===== Sale Details =====*/
+    /*===== Products Cate =====*/
+    /*===== Block Pagination =====*/
+    /*===== News Cate =====*/
+    /*===== News Details =====*/
+    /*===== Cart =====*/
+    /*===== Product Details =====*/
+    /*===== Block Product Relate Right  =====*/
+    /*===== Block Right =====*/
+    /*===== Panel =====*/
+    /*===== Compare =====*/
+    /*===== Countdown =====*/
+    /*===== Breadcrumb =====*/
+    /*===== Footer =====*/
+
+/*==========*/
+
+/*===== Import Files =====*/
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Import Css */
+@import url(../vendor/bootstrap/bootstrap.min.css);
+@import url(../vendor/fontawesome/font-awesome.min.css);
+@import url(../vendor/icofont/icofont.css);
+@import url(normalize.css);
+
+/*===== Layout Style =====*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1920px;
+  font-weight: 400;
+  background: url(../images/bg-footer.png) repeat;
+  word-break: break-word;
+  margin: 0;
+  color: #313131;
+  font: 14px/18px Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  outline: none;
+}
+a { color: #313131; cursor: pointer; }
+a:hover,
+a:focus {
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+p { margin: 0; }
+select:focus, button:focus, input:focus { outline: none; }
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea, select, input[type="number"],
+input[type="tel"] {
+  padding: 8px 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.wrapper {
+  position: relative;
+}
+.clearfix { clear: both; }
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*===== Header =====*/
+.header {
+    background: #fff;
+}
+.header .header-register {
+    height: 31px;
+    background: #fafafa;
+    border-bottom: 1px solid #f4f4f4;
+}
+.header-register {
+    line-height: 24px;
+}
+.header-register .logon,
+.header-register .register {
+    padding-left: 16px;
+    margin: 5px 0 0 20px;
+}
+.header-register .logon {
+    float: right;
+    background: url(../images/icon-logon.png) no-repeat 0 4px;
+}
+.header-register .register {
+    float: right;
+    background: url(../images/icon-register.png) no-repeat 0 4px;
+}
+.header-register .register span {
+    margin-left: 5px;
+}
+.header-register .bxh {
+    float: right;
+    background: url(../images/ico-bxh.png) no-repeat 0 3px;
+    padding-left: 16px;
+    margin: 5px 0 0 20px;
+    width: 120px;
+}
+.header-register .bxh a {
+    padding-left: 8px;
+}
+.header-register .bxh span {
+    font: normal 14px Arial;
+}
+.header-register a:hover {
+    text-decoration: underline;
+}
+.header .header-logo .logo {
+    float: left;
+}
+.header .header-logo .banner_adv {
+    float: right;
+}
+
+/*===== Back To Top =====*/
+.td-scroll-up {
+  cursor: pointer;
+  position: fixed;
+  bottom: 4px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: #252525;
+  z-index: 1;
+  transform: translate3d(0, 70px, 0);
+  -webkit-transform: translate3d(0, 70px, 0);
+  -moz-transform: translate3d(0, 70px, 0);
+  -ms-transform: translate3d(0, 70px, 0);
+  -o-transform: translate3d(0, 70px, 0);
+  -webkit-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+  -moz-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+  -o-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+}
+.td-scroll-up-visible {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+.td-scroll-up i {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  width: 40px;
+  top: 7px;
+}
+.td-scroll-up:hover {
+  color: #fff;
+  background: #707070;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}

@@ -1,0 +1,8 @@
+@media (max-width: 1366px) {
+	#main-container {
+	    background-image: none;
+	}
+	#article-container {
+	    margin-left: 0;
+	}
+}
