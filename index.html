@@ -88,17 +88,16 @@
 					<li class="level0 parent">
 						<a href="#">BĐS bán</a>
 						<ul class="level0 submenu">
-							<li class="level1"><a href="#">Bán căn hộ chung cư</a>
-							</li>
+							<li class="level1"><a href="#">Bán căn hộ chung cư</a></li>
 							<li class="level1 parent"><a href="#">Tất cả các loại nhà bán</a>
-								<ul class="level1 submenu">
+								<ul class="level2 submenu2">
 									<li><a href="#">Bán nhà riêng</a></li>
 									<li><a href="#">Bán nhà biệt thự, liền kề</a></li>
 									<li><a href="#">Bán nhà mặt phố</a></li>
 								</ul>
 							</li>
 							<li class="level1 parent"><a href="#">Tất cả các loại nhà bán</a>
-								<ul class="level1 submenu">
+								<ul class="level2 submenu2">
 									<li><a href="#">Bán đất nền dự án</a></li>
 									<li><a href="#">Bán đất</a></li>
 								</ul>
@@ -120,7 +119,162 @@
 				</ul>
 			</div><!-- /.navbar-collapse -->
         </div>
-	</nav><!-- END NAVIGATION -->
+	</nav><!-- navigation -->
+
+	<section class="block block-search">
+		<div class="container">
+			<div class="block-title block-tab-customize">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">BẤT ĐỘNG SẢN BẢN</a></li>
+					<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">BẤT ĐỘNG SẢN CHO THUÊ</a></li>
+				</ul>
+			</div>
+			<div class="block-contents">
+				<!-- Tab panes -->
+				  <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="home">
+				    	<form action="#" method="get" accept-charset="utf-8" class="search-content-input selectpicker-cus">
+					    	<div class="form-group">
+					    		<input type="text" name="" class="input-search" placeholder="Nhập địa điểm, vd: The Manor">
+					    	</div>
+					    	<div class="row-select">
+								<div class="col-xs-2">
+									<div class="form-group">
+										<select class="selectpicker form-control">
+											<option selected="selected">Loại bất động sản</option>
+											<option class="option-lv1" value="bchcc">Bán căn hộ chung cư</option>
+											<option class="option-lv1" value="tccln">Tất cả các loại nhà bán</option>
+											<option class="option-lv2" value="bnr1">Bán nhà riêng</option>
+											<option class="option-lv2" value="bnr2">Bán nhà riêng</option>
+											<option class="option-lv2" value="bnr3">Bán nhà riêng</option>
+											<option class="option-lv1" value="tccldb">Tất cả các loại đất bán</option>
+											<option class="option-lv2" value="bdnda">Bán đất nền dự án</option>
+											<option class="option-lv2" value="bd">Bán đất</option>
+											<option class="option-lv1" value="bttknd">Bán trang trại, khu nghỉ dưỡng</option>
+											<option class="option-lv1" value="bknx">Bán kho, nhà xưởng</option>
+											<option class="option-lv1" value="blbdsk">Bán loại bất động sản khác</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="form-group">
+										<select class="selectpicker form-control">
+											<option class="option-lv0" selected="selected">Tỉnh/Thành phố</option>
+											<option class="option-lv0" value="HCM">Hồ Chí Minh</option>
+											<option class="option-lv0" value="HN">Hà Nội</option>
+											<option class="option-lv0" value="BD">Bình Dương</option>
+											<option class="option-lv0" value="DDN">Đà Nẵng</option>
+											<option class="option-lv0" value="HP">Hải Phòng</option>
+											<option class="option-lv0" value="LA">Long An</option>
+											<option class="option-lv0" value="BRVT">Bà Rịa Vũng Tàu</option>
+											<option class="option-lv0" value="AG">An Giang</option>
+											<option class="option-lv0" value="DNA">Đồng Nai</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="form-group">
+										<select class="selectpicker form-control">
+											<option class="option-lv0" selected="selected">Quận/Huyện</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="form-group">
+										<select class="selectpicker form-control">
+											<option class="option-lv0" selected="selected">Diện tích</option>
+											<option class="option-lv0" value="1">Không xác định</option>
+											<option class="option-lv0" value="2"><= 30 m2</option>
+											<option class="option-lv0" value="3">30-50 m2</option>
+											<option class="option-lv0" value="4">50-80 m2</option>
+											<option class="option-lv0" value="5">80-100 m2</option>
+											<option class="option-lv0" value="6">100-150 m2</option>
+											<option class="option-lv0" value="7">150-200 m2</option>
+											<option class="option-lv0" value="7">200-250 m2</option>
+											<option class="option-lv0" value="9">250-300 m2</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="form-group">
+										<select class="selectpicker form-control">
+											<option class="option-lv0" selected="selected">Mức giá</option>
+											<option class="option-lv0" value="1">Thỏa thuận</option>
+											<option class="option-lv0" value="2">< 500 triệu</option>
+											<option class="option-lv0" value="3">500 - 800 triệu</option>
+											<option class="option-lv0" value="4">800 - 1 tỷ</option>
+											<option class="option-lv0" value="5">1 - 2 tỷ</option>
+											<option class="option-lv0" value="6">2 - 3 tỷ</option>
+											<option class="option-lv0" value="7">3 - 5 tỷ</option>
+											<option class="option-lv0" value="7">5 - 7 tỷ</option>
+											<option class="option-lv0" value="9">7 - 10 tỷ</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="form-group">
+										<select class="selectpicker form-control">
+											<option class="option-lv0" selected="selected">Phường/Xã</option>
+											<option class="option-lv0" value="1">Bàu Hàm 2</option>
+											<option class="option-lv0" value="2">Dầu Giây</option>
+											<option class="option-lv0" value="3">Gia Kiệm</option>
+											<option class="option-lv0" value="4">Gia Tân 1</option>
+											<option class="option-lv0" value="5">Gia Tân 2</option>
+											<option class="option-lv0" value="6">Gia Tân 3</option>
+											<option class="option-lv0" value="7">Hưng Lộc</option>
+											<option class="option-lv0" value="7">Lộ 25</option>
+											<option class="option-lv0" value="9">Quang Trung</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row-select">
+								<div class="col-xs-2">
+									<div class="form-group">
+										<select class="selectpicker form-control">
+											<option class="option-lv0" selected="selected">Đường/Phố</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="form-group">
+										<select class="selectpicker form-control">
+											<option class="option-lv0" selected="selected">Số phòng ngủ</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="form-group">
+										<select class="selectpicker form-control">
+											<option class="option-lv0" selected="selected">Hướng nhà</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="form-group">
+										<select class="selectpicker form-control">
+											<option class="option-lv0" selected="selected">Dự án</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-xs-2 col-button">
+									<div class="form-group">
+										<button type="button" class="btn btn-success"><i class="fa fa-search"></i> Tìm Kiếm</button>
+									</div>
+								</div>
+							</div>
+				    	</form>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="profile">BẤT ĐỘNG SẢN CHO THUÊ</div>
+				  </div>
+			</div>
+		</div>
+	</section>
+
+	<section class="block block-wrapper">
+		
+	</section>
 
 	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
   		<i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -133,6 +287,8 @@
 	<script src="vendor/bootstrap/bootstrap.min.js"></script>
 	<!-- sticky -->
 	<script src="vendor/sticky/jquery.sticky.js"></script>
+	<!-- ===== JS Bootstrap Select ===== -->
+	<script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
 	<!-- Js Common -->
 	<script src="js/common.js"></script>
 </body>
