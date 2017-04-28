@@ -1,8 +1,5 @@
-@media (max-width: 1366px) {
-	#main-container {
-	    background-image: none;
-	}
-	#article-container {
-	    margin-left: 0;
+@media (min-width: 1200px) {
+	.container {
+	    width: 1000px;
 	}
 }

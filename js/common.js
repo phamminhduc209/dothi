@@ -14,6 +14,6 @@
 	  		scrollTop : 0
 		}, 'slow');
 	});
-  
+
 
 })(jQuery); // End of use strict
