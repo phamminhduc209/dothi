@@ -78,8 +78,8 @@ body {
     word-break: break-word;
     margin: 0;
     color: #313131;
-    font: 14px/18px Arial, Helvetica, sans-serif;
-    line-height: 1.5;
+    font: 14px/20px Arial, Helvetica, sans-serif;
+    line-height: 20px;
     outline: none;
 }
 a { color: #313131; cursor: pointer; }
@@ -160,6 +160,7 @@ img {
 .vip5 { color: #888 !important; }
 .vipdb { color: #01b717 !important; }
 .inline-block { display: inline-block; }
+.text-red { color: red !important; }
 
 /*===== Header =====*/
 .header {
@@ -513,18 +514,20 @@ img {
     padding: 6px;
     position: relative;
     background: #fff;
+    min-height: 313px;
 }
 .block-news-default .block-news-default-item .block-title {
-    margin: 12px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
 .block-news-default .block-news-default-item .block-title a {
     color: #015f95;
     font: bold 16px/20px tahoma,arial;
+    display: block;
 }
 .block-news-default .block-news-list-right {
     border: 1px solid #dedede;
     background: #fff;
-    padding: 10px;
+    padding: 0 13px 10px !important;
 }
 .block-news-default-right .block-news-list-right li {
     border-top: 1px solid #dedede;
@@ -535,7 +538,7 @@ img {
 .block-news-default-right .block-news-list-right li:first-child {
     border: none;
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 9px;
 }
 .block-news-default-right .block-news-list-right li a {
     font: normal 14px/20px tahoma;
@@ -543,6 +546,7 @@ img {
     display: block;
     padding: 3px 0 3px 12px;
     position: relative;
+    min-height: 40px;
 }
 .block-news-default-right .block-news-list-right li a:before{
     content: url(../images/icon_butlet.png);
@@ -704,7 +708,6 @@ img {
 .block-fengshui .news-fengshui {
     padding: 6px 4px;
     border: 1px solid #e3e3e3;
-    border-top: 0;
     background: #fff;
     margin-top: 5px;
 }
@@ -856,7 +859,6 @@ img {
     left: 0;
     margin-top: 3px;
 }
-
 .block-slide-sidebar .bx-wrapper {
     position: relative;
     margin-bottom: 20px;
@@ -915,6 +917,54 @@ img {
     font: normal 14px/18px 'Roboto Condensed',arial;
     display: block;
     margin-bottom: 5px;
+}
+.block-viewall {
+    border-top: 1px solid #e3eef2;
+    padding-top: 8px;
+    margin-top: 8px;
+}
+.block-viewall a {
+    background: #45a44b;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    position: relative;
+    border-radius: 4px;
+    font: normal 14px/30px Roboto Condensed;
+    float: right;
+}
+
+/*===== Breadcrumb ======*/
+.block-breadcrumb .block-contents {
+    background: #f1eff0;
+    border: 1px solid #f0eeef;
+    padding: 0 12px 0 12px;
+    border-radius: 3px;
+}
+.block-breadcrumb ul li {
+    color: #5f5f5f;
+    padding: 0 10px 3px 10px;
+    margin: 0 5px 0 5px;
+    margin: 9px 5px 0 0;
+    border-radius: 3px;
+    display: inline-block;
+}
+.block-breadcrumb ul li a {
+    color: #5f5f5f;
+    display: block;
+    font: normal 12px/20px Tahoma;
+}
+.block-breadcrumb ul li.active a,
+.block-breadcrumb ul li:hover a {
+    color: #fff;
+    transition: all 0.4s;
+}
+.block-breadcrumb ul li.active,
+.block-breadcrumb ul li:hover {
+    background: #37a344;
+    transition: all 0.4s;
 }
 
 /*===== Slide Home ======*/
@@ -987,11 +1037,33 @@ img {
     padding: 17px;
     border: 1px solid #e3e3e3;
     margin-top: 3px;
+    font: normal 12px tahoma;
 }
 .titile-post-news {
     font-weight: bold;
     color: #36a445;
     font: bold 12px tahoma;
+    margin: 5px 0 15px;
+}
+.block-post-news .form-group label {
+    color: #1d1312;
+    padding-top: 12px;
+    font: normal 12px tahoma;
+}
+.block-post-news .form-group label span {
+    color: #fc0000;
+}
+.block-post-news .form-group .btn-group {
+    width: 229px;
+}
+.block-post-news .form-group .w158 .btn-group {
+    width: 158px;
+}
+.block-post-news .form-group .form-control2 {
+    border: 1px solid #cac1ba;
+    float: left;
+    padding: 6px 5px;
+    border-radius: 0
 }
 .hplcate {
     background: url(../images/bg-radio.png) no-repeat 0px 2px;
@@ -1000,6 +1072,46 @@ img {
 }
 .hplcate-active {
     background: url(../images/bg-radio-selected.png) no-repeat 0px 2px !important;
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    width: 95px;
+    height: 95px;
+    background: url(../images/icon_upload2.png);
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.upload-item {
+    width: 95px;
+    height: 95px;
+    overflow: hidden;
+    margin: 0 15px 0 0;
+    position: relative;
+}
+.upload-item .upload-item-delete {
+    background: url(../images/avatar-tool-delete.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0;
+    border: 0;
+    position: absolute;
+}
+
+
+/*===== Map ======*/
+.block-map .mymap {
+    width: 100%;
+    height: 330px;
+    border: 1px solid #cac1ba;
+    border-radius: 4px;
 }
 
 /*===== Cate News ======*/
@@ -1253,12 +1365,6 @@ img {
     border-bottom: 1px solid #cacaca;
     padding: 15px 0;
 }
-/*.block-share {
-    padding-bottom: 8px;
-    margin: 0 auto;
-    width: 100%;
-}*/
-
 
 /*===== Back To Top ======*/
 .td-scroll-up {
