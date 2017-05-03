@@ -11,7 +11,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home</title>
+	<title>Trang Chủ</title>
 	<meta name="description" content="">	
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
@@ -83,6 +83,9 @@
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse menu" id="bs-example-navbar-collapse-1">
+				<div class="text-center logo-menu">
+					<a title="Logo" href="home.html"><img src="images/Logo.png" alt="Logo"></a>
+				</div>
 				<ul class="nav navbar-nav navbar-left">
 					<li class="level0 active"><a class="" href="#">Trang chủ</a></li><!-- END MENU HOME -->
 					<li class="level0 parent">
@@ -120,6 +123,20 @@
 			</div><!-- /.navbar-collapse -->
         </div>
 	</nav><!-- /navigation -->
+
+	<section class="block-slider-home">
+		<div class="owl-carousel dotsData owl-style2" data-nav="true" data-margin="0" data-items='1' data-autoplayTimeout="700" data-autoplay="false" data-loop="true">
+				<div class="item-slide" data-dot="1">
+					<a href="" title=""><img src="images/slide-home/1.jpg" alt="slide1"></a>
+				</div><!-- item-slide1 -->
+				<div class="item-slide" data-dot="2">
+					<a href="" title=""><img src="images/slide-home/2.jpg" alt="slide1"></a>
+				</div><!-- item-slide2 -->
+				<div class="item-slide" data-dot="3">
+					<a href="" title=""><img src="images/slide-home/3.png" alt="slide1"></a>
+				</div><!-- item-slide -->
+			</div>
+	</section><!-- /block-slider -->
 
 	<section class="block-search">
 		<div class="container">
@@ -270,12 +287,12 @@
 				  </div>
 			</div>
 		</div>
-	</section><!-- /search -->
+	</section><!-- /block-search -->
 
 	<section class="main" id="site-main">
 		<section class="container">
 			<section class="row">
-				<section class="col-sm-8 col-xs-12 block-site-left">
+				<section class="col-sm-8 col-xs-12 block-sitemain">
 					<article class="block block-news-default row">
 						<div class="block-news-default-left">
 							<div class="col-sm-7 col-xs-12">
@@ -489,11 +506,11 @@
 								</div>
 							</div>
 						</div>
-					</article><!-- /block block-fengshui -->
+					</article><!-- /block-fengshui -->
 
-					<article class="block-inews row">
-						<div class="col-sm-6 col-xs-12">
-							<div class="block-advisory">
+					<article class="block block-inews row">
+						<div class="block-advisory">
+							<div class="col-sm-6 col-xs-6">
 								<div class="block-title block-title-common">
 									<h3><span class="icon-tile2"><img src="images/icon-tvl.png" alt=""> Tư vấn luật</h3>
 								</div>
@@ -512,8 +529,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-xs-12">
-							<div class="block-architectural">
+						<div class="block-architectural">
+							<div class="col-sm-6 col-xs-6">
 								<div class="block-title block-title-common">
 									<h3><span class="icon-tile2"><img src="images/icon-tkkt.png" alt=""> Thiết kế kiến trúc</h3>
 								</div>
@@ -532,11 +549,11 @@
 								</div>
 							</div>
 						</div>
-					</article>
+					</article><!-- /block-inews -->
 
 				</section><!-- /block-site-left -->
 
-				<section class="col-sm-4 col-xs-12 block-site-right">
+				<section class="col-sm-4 col-xs-12 block-sitebar">
 					<article class="block-sidebar block-news-sidebar">
 						<div class="block-title-common">
 							<h3><span class="icon-tile"><i class="fa fa-star"></i></span> Tin xem nhiều</h3>
@@ -559,22 +576,22 @@
 						<div class="block-contents block-contents2">
 							<ul class="block-list-sidebar block-slide-sidebar">
 								<div class="bxslider">
-									<div class="slideproject">
+									<div class="large-item">
 		                                <a href="#" title=""><img src="images/news-slide/large1.jpg" alt="" /></a>
 		                                <h4><a href="#" title="">Monada Khang Điền</a></h4>
 		                                <p>Đường 990, phường Phú Hữu, quận 9, Tp.HCM</p>
 		                            </div>
-									<div class="slideproject">
+									<div class="large-item">
 		                                <a href="#" title=""><img src="images/news-slide/large2.jpg" alt="" /></a>
 		                                <h4><a href="#" title="">Monada Khang Điền</a></h4>
 		                                <p>Đường 990, phường Phú Hữu, quận 9, Tp.HCM</p>
 		                            </div>
-		                            <div class="slideproject">
+		                            <div class="large-item">
 		                                <a href="#" title=""><img src="images/news-slide/large3.jpg" alt="" /></a>
 		                                <h4><a href="#" title="">Monada Khang Điền</a></h4>
 		                                <p>Đường 990, phường Phú Hữu, quận 9, Tp.HCM</p>
 		                            </div>
-		                            <div class="slideproject">
+		                            <div class="large-item">
 		                                <a href="#" title=""><img src="images/news-slide/large4.jpg" alt="" /></a>
 		                                <h4><a href="#" title="">Monada Khang Điền</a></h4>
 		                                <p>Đường 990, phường Phú Hữu, quận 9, Tp.HCM</p>
@@ -583,8 +600,8 @@
 								<div id="bx-pager" class="bx-thumbnail">
 									<div class="item">
 										<div class="item-child">
-				                            <a data-slide-index="0" class="tt_project" href="#" title=""><img class="avatar" src="images/news-slide/thumb1.jpg" alt="" /></a>
-				                            <div class="info_project">
+				                            <a data-slide-index="0" class="slide_title" href="#" title=""><img class="avatar" src="images/news-slide/thumb1.jpg" alt="" /></a>
+				                            <div class="slide_info">
 				                                <a href="#" title="">Monada Khang Điền</a>
 				                                <p>Đường 990, phường Phú Hữu, quận 9, Tp.HCM</p>
 				                            </div>
@@ -592,8 +609,8 @@
 			                        </div>
 			                        <div class="item">
 			                        	<div class="item-child">
-				                            <a data-slide-index="1" class="tt_project" href="#" title=""><img class="avatar" src="images/news-slide/thumb2.jpg" alt="" /></a>
-				                            <div class="info_project">
+				                            <a data-slide-index="1" class="slide_title" href="#" title=""><img class="avatar" src="images/news-slide/thumb2.jpg" alt="" /></a>
+				                            <div class="slide_info">
 				                                <a href="#" title="">Monada Khang Điền</a>
 				                                <p>Đường 990, phường Phú Hữu, quận 9, Tp.HCM</p>
 				                            </div>
@@ -601,8 +618,8 @@
 			                        </div>
 			                        <div class="item">
 			                        	<div class="item-child">
-				                            <a data-slide-index="2" class="tt_project" href="#" title=""><img class="avatar" src="images/news-slide/thumb3.jpg" alt="" /></a>
-				                            <div class="info_project">
+				                            <a data-slide-index="2" class="slide_title" href="#" title=""><img class="avatar" src="images/news-slide/thumb3.jpg" alt="" /></a>
+				                            <div class="slide_info">
 				                                <a href="#" title="">Monada Khang Điền</a>
 				                                <p>Đường 990, phường Phú Hữu, quận 9, Tp.HCM</p>
 				                            </div>
@@ -610,8 +627,8 @@
 			                        </div>
 			                        <div class="item">
 			                        	<div class="item-child">
-				                            <a data-slide-index="3" class="tt_project" href="#" title=""><img class="avatar" src="images/news-slide/thumb4.jpg" alt="" /></a>
-				                            <div class="info_project">
+				                            <a data-slide-index="3" class="slide_title" href="#" title=""><img class="avatar" src="images/news-slide/thumb4.jpg" alt="" /></a>
+				                            <div class="slide_info">
 				                                <a href="#" title="">Monada Khang Điền</a>
 				                                <p>Đường 990, phường Phú Hữu, quận 9, Tp.HCM</p>
 				                            </div>
@@ -683,43 +700,44 @@
 				</form>
 			</div>
 		</div>
-	</section><!-- /get news -->
+	</section><!-- /block-get-news -->
 
 	<footer class="footer">
-		<div class="menu-bottom">
+		<div class="block-menu-bottom">
 	        <ul class="container">
-	            <li><a href="/gioi-thieu.htm" rel="nofollow">Giới thiệu</a></li>
-	            <li><a href="/huong-dan.htm" rel="nofollow">Hướng dẫn sử dụng</a></li>
-	            <li><a href="/quy-dinh.htm" rel="nofollow">Quy định</a></li>
-	            <li><a href="/lien-he.htm" rel="nofollow">Liên hệ</a></li>
+	            <li><a href="#" rel="nofollow">Giới thiệu</a></li>
+	            <li><a href="#" rel="nofollow">Hướng dẫn sử dụng</a></li>
+	            <li><a href="#" rel="nofollow">Quy định</a></li>
+	            <li><a href="#" rel="nofollow">Liên hệ</a></li>
 	            
-	            <li><a href="/dieu-khoan.htm" rel="nofollow">Điều khoản thỏa thuận</a></li>
-	            <li><a href="/bao-gia.htm" rel="nofollow">Báo giá</a></li>
+	            <li><a href="#" rel="nofollow">Điều khoản thỏa thuận</a></li>
+	            <li><a href="#" rel="nofollow">Báo giá</a></li>
 	        </ul>
-	        <div class="clear"></div>
 	    </div>
 	    <div class="container">
-	    	<div class="footer_bottom">
-	    		<div class="logo_footer">
-	                <a href="/" title="Đô thị">
-	                    <img src="images/logo.png" alt="Đô thị"></a>
+	    	<div class="block-footer row">
+	    		<div class="block-logo-footer col-sm-3">
+	                <a href="/" title="Đô thị"><img src="images/logo.png" alt="Đô thị"></a>
 	            </div>
-	            <div class="info_footer">
-	                <p>Copyright DO THI MEDIA</p>
-	                <p>Dothi.net 3.1 đang trong quá trình hoàn thiện</p>
-	                <p class="info_ct"><span>Hotline:  0903 236 862 - 0969 980 365 </span></p>
-	                <div class="clearfix"></div>
-	                <p></p>
-	                <p><span class="colr">Thứ 2 đến thứ 6: <strong>8h00 - 17h15</strong> | Thứ 7: <strong>8h00 - 12h00</strong></span></p>
-	                <div class="clear"></div>
-	                <p class="info_ct">
-	                    <a style="border: none; margin: 0; padding: 0" rel="nofollow" href="" target="_top">Email: abc@abc.net</a>
-	                    <a href="" rel="nofollow">Skype: abc.abc</a>
-	                </p>
+	            <div class="block-footer-address col-sm-9">
+	                <address>
+	                	Copyright DO THI MEDIA<br>
+	                	Dothi.net 3.1 đang trong quá trình hoàn thiện<br>
+						<strong>Hotline: 0903 236 862 - 0969 980 365</strong><br>
+						Thứ 2 đến thứ 6:<strong> 8h00 - 17h15 | Thứ 7: 8h00 - 12h00</strong><br>
+						<strong>Email: </strong>
+						<a href="mailto:joe@example.com?subject=feedback" "email me">abc.abc@mail.vn</a>
+						<strong>|</strong>
+						<strong>Skype: </strong>
+						<a href="#" "email me">abc.abc</a>
+					</address>
 	            </div>
 	    	</div>
+	    	<!-- <div class="block-share">
+	    		<a href="" title="">++++++++</a>
+	    	</div> -->
 	    </div>
-	</footer>
+	</footer><!-- /footer -->
 
 	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
   		<i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -728,11 +746,13 @@
 
 	<!-- ===== JS ===== -->
 	<script src="js/jquery.min.js"></script>
-	<!-- ===== JS bxslider ===== -->
-	<script src="vendor/bxslider/jquery.bxslider.min.js"></script>
-	<!-- bootstrap -->
+	<!-- JS Bootstrap -->
 	<script src="vendor/bootstrap/bootstrap.min.js"></script>
-	<!-- sticky -->
+	<!-- ===== JS Bxslider ===== -->
+	<script src="vendor/bxslider/jquery.bxslider.min.js"></script>
+	<!-- ===== JS Bxslider ===== -->
+	<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+	<!-- JS Sticky -->
 	<script src="vendor/sticky/jquery.sticky.js"></script>
 	<!-- ===== JS Bootstrap Select ===== -->
 	<script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
