@@ -1010,7 +1010,15 @@ img {
     -moz-transition: background-color 0.3s ease;
     -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
-} 
+}
+
+/*===== Post News ======*/
+.block-post-news .block-contents {
+    background: #fff;
+    padding: 17px;
+    border: 1px solid #e3e3e3;
+    margin-top: 3px;
+}
 
 /*===== Back To Top ======*/
 .td-scroll-up {
