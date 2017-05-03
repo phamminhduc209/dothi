@@ -40,12 +40,22 @@
 		});
 	});
 	/*  [ Main Menu ]
-  - - - - - - - - - - - - - - - - - - - - */
-  $(".navbar-toggle").on( 'click', function() {
-    $(this).toggleClass('has-open');
-    $("#main-menu .menu").toggleClass("has-open");
-    $("body").toggleClass("menu-open");
-  });
+	- - - - - - - - - - - - - - - - - - - - */
+	$(".navbar-toggle").on( 'click', function() {
+		$(this).toggleClass('has-open');
+		$("#main-menu .menu").toggleClass("has-open");
+		$("body").toggleClass("menu-open");
+	});
+
+	$('#hplSell').click(function () {
+        $('#hplSell').addClass('hplcate-active');
+        $('#hplRent').removeClass('hplcate-active');
+    });
+
+    $('#hplRent').click(function () {
+        $('#hplRent').addClass('hplcate-active');
+        $('#hplSell').removeClass('hplcate-active');
+    });
 
 
 })(jQuery); // End of use strict
