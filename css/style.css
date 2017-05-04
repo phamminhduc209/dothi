@@ -1521,16 +1521,13 @@ img {
 }
 
 /*===== Block News With Region =====*/
-.news-with-region-list {
-    margin-top: 10px;
-}
 .news-with-region-item {
     border: 1px solid #e3e3e3;
     padding: 8px;
     text-rendering: geometricPrecision;
     font-family: Arial;
     background: #fff;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .news-with-region-item .news-with-region-title a {
     color: #016096;
@@ -1559,6 +1556,64 @@ img {
 }
 .news-with-region-content .news-with-region-info span {
     color: #22c035;
+}
+.news-with-region-list .viewall {
+    text-align: right;
+    display: block;
+    margin-top: 8px;
+    color: #016096;
+    font-family: Arial;
+}
+.news-with-region-list .viewall span {
+    font-size: 16px;
+}
+.news-with-region-list .viewall:hover i {
+    text-decoration: underline;
+}
+
+/*===== Block Features Support =====*/
+.block-features-support ul {
+    border: 1px solid #e3e3e3;
+    margin: 5px 0 0 0;
+    background: #fff;
+}
+.block-features-support ul li {
+    border-bottom: 1px solid #cee2e9;
+}
+.block-features-support ul li a {
+    font: normal 14px tahoma;
+    text-transform: uppercase;
+    color: #016096;
+    display: block;
+    padding: 10px 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+.block-features-support ul li a:hover {
+    color: #fff;
+    background-color: #37a344;
+}
+.block-features-support ul li a i {
+    font-size: 36px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.btn-new {
+    background: #cc000b;
+    width: 48px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    font-size: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: tahoma;
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 /*===== Block Cate News Detail =====*/
