@@ -1501,8 +1501,65 @@ img {
     width: 122px !important;
     height: 92px !important;
 }
+.block-detail-info h3 {
+    font: bold 14px/20px Tahoma;
+    color: #36a445;
+    margin-bottom: 10px;
+}
+.table-customize>tbody>tr:nth-of-type(odd) {
+    background-color: #eaf5ff;
+}
+.table.table-customize>tbody>tr>td, .table.table-customize>tbody>tr>th,
+.table.table-customize>tfoot>tr>td, .table.table-customize>tfoot>tr>th,
+.table.table-customize>thead>tr>td, .table.table-customize>thead>tr>th {
+    padding: 6px 5px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font: bold 12px Tahoma;
+    font-family: Tahoma;
+}
 
-
+/*===== Block News With Region =====*/
+.news-with-region-list {
+    margin-top: 10px;
+}
+.news-with-region-item {
+    border: 1px solid #e3e3e3;
+    padding: 8px;
+    text-rendering: geometricPrecision;
+    font-family: Arial;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.news-with-region-item .news-with-region-title a {
+    color: #016096;
+    font: bold 14px/18px Tahoma,Arial;
+    display: block;
+    margin-bottom: 5px;
+}
+.news-with-region-content .news-with-region-img {
+    width: 87px;
+    height: 59px;
+    float: left;
+}
+.news-with-region-content .news-with-region-info {
+    float: left;
+    height: auto;
+    width: 209px;
+    margin-left: 6px;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+.news-with-region-content .news-with-region-info label {
+    margin-bottom: 0;
+    width: 65px;
+    float: left;
+    font-weight: bold;
+}
+.news-with-region-content .news-with-region-info span {
+    color: #22c035;
+}
 
 /*===== Block Cate News Detail =====*/
 .block-cate-news-detail {
