@@ -6,31 +6,7 @@
     [Let press Ctrl + f and type of paste the key, then press Enter to search the content ] Title
     Example : You want Import Files => Title is Import Files, or Fonts => Title is Fonts
 
-    /*===== Layout Style =====*/
-    /*===== Back To Top =====*/
-    /*===== Preloader =====*/
-    /*===== Header =====*/
-    /*===== Menu Top =====*/
-    /*===== Block =====*/
-    /*===== Block Slider =====*/
-    /*===== Block Products =====*/
-    /*===== Page Common =====*/
-    /*===== Contact =====*/
-    /*===== Promotions =====*/
-    /*===== Sale Details =====*/
-    /*===== Products Cate =====*/
-    /*===== Block Pagination =====*/
-    /*===== News Cate =====*/
-    /*===== News Details =====*/
-    /*===== Cart =====*/
-    /*===== Product Details =====*/
-    /*===== Block Product Relate Right  =====*/
-    /*===== Block Right =====*/
-    /*===== Panel =====*/
-    /*===== Compare =====*/
-    /*===== Countdown =====*/
-    /*===== Breadcrumb =====*/
-    /*===== Footer =====*/
+    
 
 /*==========*/
 
@@ -222,10 +198,17 @@ img {
 .navbar-custom {
     background: #1d5f93;
     border: none;
-    border-bottom: 1px solid #b9ccd3;
+    /*border-bottom: 1px solid #b9ccd3;*/
     border-radius: 0;
     margin-bottom: 0;
     min-height: auto;
+}
+.sticky-wrapper.is-sticky .fix-header {
+    z-index: 99;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
 }
 #header .menu {
     position: relative;
@@ -384,6 +367,9 @@ img {
 .block-search .block-contents .search-content-input .row-select:last-child .form-group {
     margin-bottom: 0;
 }
+.block-search .block-contents .search-content-input .form-group .btn-search-home {
+    width: 97%;
+}
 .input-search {
     border: 1px solid #6990b1 !important;
     line-height: normal;
@@ -531,7 +517,9 @@ img {
 .block-news-default .block-news-list-right {
     border: 1px solid #dedede;
     background: #fff;
-    padding: 0 13px 10px !important;
+    padding: 13px 13px 10px !important;
+    min-height: 325px;
+    height: 346px;
 }
 .block-news-default-right .block-news-list-right li {
     border-top: 1px solid #dedede;

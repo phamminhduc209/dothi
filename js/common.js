@@ -39,6 +39,7 @@
 			$(this).toggleClass('open').siblings('.submenu').slideToggle();
 		});
 	});
+
 	/*  [ Main Menu ]
 	- - - - - - - - - - - - - - - - - - - - */
 	$(".navbar-toggle").on( 'click', function() {
@@ -47,15 +48,18 @@
 		$("body").toggleClass("menu-open");
 	});
 
+	// Input Page Post News
 	$('#hplSell').click(function () {
         $('#hplSell').addClass('hplcate-active');
         $('#hplRent').removeClass('hplcate-active');
     });
-
     $('#hplRent').click(function () {
         $('#hplRent').addClass('hplcate-active');
         $('#hplSell').removeClass('hplcate-active');
     });
+
+    /*  [ Sticky Menu ] */
+  	$('.fix-header ').sticky({ topSpacing: 0 });
 
 
 })(jQuery); // End of use strict
