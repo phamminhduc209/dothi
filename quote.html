@@ -222,10 +222,158 @@
 									<div class="tab-content">
 										<div role="tabpanel" class="tab-pane active" id="httt1">
 											<p style="text-transform: uppercase; color: #016098; font: bold 16px/22px arial; margin-bottom: 5px; margin-top: 8px;">Mời Quý khách chọn các hình thức thanh toán sau đây:</p>
-											<div class="box">
-												<div class="box-header"></div>
-												<div class="box-body"></div>
-											</div>
+											<div class="block-tab-collapse">
+												<div class="panel-group wrap" id="bs-collapse">
+													<div class="panel">
+													    <div class="panel-heading">
+													        <h4 class="panel-title">
+													            <a data-toggle="collapse" data-parent="#bs-collapse" href="#one">
+													                <img src="images/icon-dotted.png" alt="">
+													                Chuyển Khoản Ngân Hàng
+													            </a>
+													        </h4>
+													    </div>
+													    <div id="one" class="panel-collapse collapse in">
+													        <div class="panel-body">
+													            <table class="table table-bordered">
+													            	<tr>
+													            		<th style="width: 180px;">Số tài khoản</th>
+													            		<td class="text-red">0000000000000000</td>
+													            	</tr>
+													            	<tr>
+													            		<th>Ngân hàng</th>
+													            		<td>Ngân hàng ABC XYZ</td>
+													            	</tr>
+													            	<tr>
+													            		<th>Người hưởng lợi</th>
+													            		<td>XXXXXXXX</td>
+													            	</tr>
+													            	<tr>
+													            		<th>Nội dung chuyển tiền</th>
+													            		<td>.....</td>
+													            	</tr>
+													            </table>
+													            <p>Nếu quý khách có nhu cầu thanh toán qua tài khoản ngân hàng khác, vui lòng liên hệ bộ phận chăm sóc khách hàng</p>
+													            <p>Điện thoại: <strong>0909 998 999</strong></p>
+													            <p>Email: <strong><a href="mailto:joe@example.com?subject=feedback" "email me">abc@xyz.com.vn</a></strong></p>
+													            <form action="#" method="POST" class="form-horizontal block-form-contact block-form-tranfer" accept-charset="utf-8" style="font: normal 12px tahoma;">
+									                      			<div class="form-group">
+									                      				<label for="" class="col-sm-2 control-label">Số tiền nộp <span class="text-red">(*)</span></label>
+									                      				<div class="col-sm-5 form-inline">
+									                      					<input type="text" class="inline-block" id="" placeholder="" style="width: 230px;">
+									                      					<span class="inline-block">VND</span>
+									                      				</div>
+									                      			</div>
+									                      			<div class="form-group">
+									                      				<label for="" class="col-sm-2 control-label">Họ tên <span class="text-red">(*)</span></label>
+									                      				<div class="col-sm-9">
+									                      					<input type="text" class="" id="" placeholder="">
+									                      				</div>
+									                      			</div>
+									                      			<div class="form-group">
+									                      				<label for="" class="col-sm-2 control-label">Điện thoại:</label>
+									                      				<div class="col-sm-9">
+									                      					<input type="text" class="" id="" placeholder="">
+									                      				</div>
+									                      			</div>
+									                      			<div class="form-group">
+									                      				<label for="" class="col-sm-2 control-label">Lời nhắn: <span class="text-red">(*)</span></label>
+									                      				<div class="col-sm-9">
+									                      					<textarea rows="5" name="" class="" id="" placeholder=""></textarea>
+									                      				</div>
+									                      			</div>
+									                      			<div class="form-group">
+																		<div class="col-sm-offset-2 col-sm-10 text-center">
+																		  	<button type="submit" class="btn btn-success"> Thực Hiện</button>
+																		</div>
+																	</div>
+									                      		</form>
+													        </div>
+													    </div>
+													</div>
+													<!-- end of panel -->
+													<div class="panel">
+													    <div class="panel-heading">
+													        <h4 class="panel-title">
+													            <a data-toggle="collapse" data-parent="#bs-collapse" href="#two">
+													                <img src="images/icon-dotted.png" alt="">
+													                Thẻ Cào
+													            </a>
+													        </h4>
+													    </div>
+													    <div id="two" class="panel-collapse collapse in">
+													        <div class="panel-body">
+													            <p>Vui lòng mua thẻ cào điện thoại và nhập các tiêu chí bắt buộc dưới đây:</p>
+													            <p><b style="color: red">Chú ý: </b>Khách hàng thanh toán bằng hình thức nạp thẻ điện thoại sẽ mất 20% phí cho nhà mạng. Số phí này <a href="/" class="text-blue"><b>Dothi.net</b></a> sẽ chịu 10% và Khách hàng chịu 10%. Ví dụ nạp thẻ 100.000 VND sẽ có 90.000 VND trong tài khoản.</p>
+													            <p><img src="images/qoute/telco.png" title="Nạp tiền" style="width: 693px"></p>
+
+													            <form class="clearfix block-form-col">
+													            	<div class="form-row">
+													            		<div class="form-column1">
+													            			<div class="row-group">
+													            				<label for="" class="control-label">Số điện thoại: <span class="text-red">(*)</span></label>
+													            				<div class="input-row">
+													            					<input type="text" class="" id="" placeholder="">
+												                      				<div class="clearfix"></div>
+												                      				<span class="text-red" id="">Bạn cần nhập SĐT.</span>
+													            				</div>
+													            			</div>
+													            		</div>
+													            		<div class="form-column2">
+													            			<div class="row-group">
+													            				<label for="" class="control-label">Loại thẻ: <span class="text-red">(*)</span></label>
+											                      				<div class="input-row block-select-tranfer">
+													            					<select class="selectpicker">
+																						<option selected="selected" value="Mobifone">Mobifone</option>
+																						<option selected="selected" value="Viettel">Viettel</option>
+																						<option selected="selected" value="Vinaphone">Vinaphone</option>
+																						<option selected="selected" value="FPTGate">FPT Gate</option>
+																					</select>
+													            				</div>
+													            			</div>
+													            		</div>
+													            	</div>
+													            	<div class="form-row">
+													            		<div class="form-column1">
+													            			<div class="row-group">
+													            				<label for="" class="control-label">Seri: <span class="text-red">(*)</span></label>
+											                      				<div class="input-row">
+													            					<input type="text" class="" id="" placeholder="">
+												                      				<div class="clearfix"></div>
+												                      				<span class="text-red" id="">Bạn cần nhập số seri.</span>
+													            				</div>
+													            			</div>
+													            		</div>
+													            		<div class="form-column2">
+													            			<div class="row-group">
+													            				<label for="" class="control-label">Mã thẻ: <span class="text-red">(*)</span></label>
+											                      				<div class="input-row">
+													            					<input type="text" class="" id="" placeholder="">
+												                      				<div class="clearfix"></div>
+												                      				<span class="text-red" id="">Bạn cần nhập mã số thẻ.</span>
+													            				</div>
+													            			</div>
+													            		</div>
+													            	</div>
+													            	<div class="form-row">
+													            		<div class="row-group">
+													            			<label for="" class="control-label">Nội dung: <span class="text-red">(*)</span></label>
+													            			<div class="input-row">
+												            					<textarea rows="5" name="" class="" id="" placeholder="Thanh toán cho mã tin hoặc số điện thoại/ email"></textarea>
+											                      				<div class="clearfix"></div>
+											                      				<span class="text-red" id="">Bạn cần nhập nội dung.</span>
+												            				</div>
+													            		</div>
+													            	</div>
+													            	<div class="text-center">
+													            		<button type="button" class="btn btn-success">Thực Hiện</button>
+													            	</div>
+																</form>
+													        </div>
+													    </div>
+													</div><!-- /panel -->
+												</div><!-- /bs-collapse  -->
+											</div><!-- /block-tab-collapse  -->
 										</div>
 										<div role="tabpanel" class="tab-pane" id="httt2">
 											Hình thức thanh toán 2
