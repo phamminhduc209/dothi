@@ -1385,6 +1385,31 @@ img {
     line-height: 18px;
     text-align: right;
 }
+.block-news-new .nav-tabs {
+    border-bottom: 1px solid #45a44b;
+}
+.block-news-new .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 0 0;
+}
+.block-news-new .nav-tabs>li>a {
+    margin-right: 10px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+.block-news-new .nav-tabs>li.active>a, .block-news-new .nav-tabs>li.active>a:focus, .block-news-new .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    border-bottom-color: transparent;
+}
+.block-news-new .nav>li>a:focus, .block-news-new .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
 
 /*===== Block Search Project =====*/
 .block-project-search .block-contents {
