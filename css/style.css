@@ -2141,6 +2141,64 @@ img {
     border-color: #A9A9A9;
 }
 
+/*===== Get Info ======*/
+.block-no-route {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg-getinfo.jpg);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.block-no-route:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.block-no-route .content {
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.block-no-route img {
+    margin-bottom: 15px;
+}
+.block-no-route .content h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 21px;
+    font-family: 'Arial';
+}
+.block-no-route .block-form-contact label {
+    font-family: Arial;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+}
+.copyright {
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 30;
+    color: #fff;
+    font-size: 14px;
+}
+.copyright a {
+    color: #fff;
+}
+
 /*===== Back To Top ======*/
 .td-scroll-up {
   cursor: pointer;
