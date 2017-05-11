@@ -501,6 +501,9 @@ img {
     padding: 10px 0;
     background: #fafafa;
 }
+.main {
+    background: #fafafa;
+}
 
 /*===== Block News Default ======*/
 .block-news-default .block-news-default-item {
@@ -1068,7 +1071,7 @@ img {
 .hplcate-active {
     background: url(../images/bg-radio-selected.png) no-repeat 0px 2px !important;
 }
-.inputfile {
+.block-post-news .inputfile {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
@@ -1076,7 +1079,7 @@ img {
     position: absolute;
     z-index: -1;
 }
-.inputfile + label {
+.block-post-news .inputfile + label {
     width: 95px;
     height: 95px;
     background: url(../images/icon_upload2.png);
@@ -2030,6 +2033,28 @@ img {
     background: url(../images/avatar-default.png) no-repeat scroll 0% 0%;
     background-color: transparent;
     background-size: 94px 94px;
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile-3 + label {
+    color: #36a346;
+}
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
 }
 
 /*===== Back Tab Qoute ======*/
