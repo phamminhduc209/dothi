@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html dir="ltr" lang="en-US" class="no-js ie ie6 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 7 ]><html dir="ltr" lang="en-US" class="no-js ie ie7 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="en-US" class="no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="en-US" class="no-js ie ie9 lte9"><![endif]-->
+<!--[if IE 10 ]><html dir="ltr" lang="en-US" class="no-js ie ie10 lte10"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Backend Manager</title>
+	<meta name="description" content="">	
+	<meta name="keywords" content="">
+	<meta name="robots" content="index,follow" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- ===== Bootstrap CSS ===== -->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/bootstrap.min.css">
+	<!-- ===== qTip CSS ===== -->
+	<link rel="stylesheet" type="text/css" href="vendor/qTip/jquery.qtip.min.css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<link href='css/animations-ie-fix.css' rel='stylesheet'>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<div class="block block-report">
+		<div class="container">
+			<div class="block-content">
+				<div class="row ">
+				 	<div class="col-md-3">
+	                    <div class="box show_popup1">
+	                        <div class="box-content">
+	                            <h4 class="tag-title">Heading</h4>
+	                            <p>Phòng</p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="box show_popup2">
+	                        <div class="box-content">
+	                            <h4 class="tag-title">Heading</h4>
+	                            <p>Phòng</p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="box show_popup3">
+	                        <div class="box-content">
+	                            <h4 class="tag-title">Heading</h4>
+	                            <p>Phòng</p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="box show_popup4">
+	                        <div class="box-content">
+	                            <h4 class="tag-title">Heading</h4>
+	                            <p>Phòng</p>
+	                        </div>
+	                    </div>
+	                </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style type="text/css" media="screen">
+		.block-report .block-content {
+			padding: 20px 0;
+		}
+		.box {
+			padding: 5px;
+			text-align: center;
+			border: 1px solid rgba(0,0,0,0.3137254901960784);
+			cursor: pointer;
+			transition-duration: 200ms;
+			transition-property: transform, border, box-shadow, margin, opacity, width;
+			background: rgb(242,242,242);
+			border: 1px solid transparent;
+			border-radius: 2px;
+			box-sizing: border-box;
+			display: block;
+			font-family: arial, sans-serif;
+			font-size: 12px;
+			height: calc(130px - 2px);
+			line-height: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+		.box:hover {
+			box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		.qtip-default {
+			width: 320px;
+			overflow: hidden;
+			background: #fff;
+			border: 1px solid #ccc;
+			word-break: break-word;
+			font-size: 14px;
+			line-height: 1.2;
+			box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		.qtip-default p {
+			margin: 3px 0;
+		}
+	</style>
+
+	<!-- ===== JS ===== -->
+	<script src="js/jquery.min.js"></script>
+	<!-- JS Bootstrap -->
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<!-- JS qTip -->
+	<script src="vendor/qTip/jquery.qtip.min.js"></script>
+
+	<script>
+		// Create the tooltips only when document ready
+		 $(document).ready(function(){
+	     	// MAKE SURE YOUR SELECTOR MATCHES SOMETHING IN YOUR HTML!!!
+	     	$('.show_popup1').qtip({
+		        content: {
+			        text: '<div class="qtip-contents"><p>Dòng 1 nè</p><p>Dòng 2 nè</p><p>Dòng 3 nè</p><p>Dòng 4 nè</p><p>Dòng 5 nè</p></div>'
+			    },
+		        show: {
+		            effect: function() {
+		                $(this).slideDown();
+		            }
+		        },
+		        hide: {
+		            effect: function() {
+		                $(this).slideUp();
+		            }
+		        },
+	     	});
+	     	$('.show_popup2').qtip({
+		        content: {
+			        text: '<div class="qtip-contents"><p>Dòng 1 nè</p><p>Dòng 2 nè</p><p>Dòng 3 nè</p><p>Dòng 4 nè</p><p>Dòng 5 nè</p></div>'
+			    },
+		        show: {
+		            effect: function() {
+		                $(this).slideDown();
+		            }
+		        },
+		        hide: {
+		            effect: function() {
+		                $(this).slideUp();
+		            }
+		        },
+	     	});
+	     	$('.show_popup3').qtip({
+		        content: {
+			        text: '<div class="qtip-contents"><p>Dòng 1 nè</p><p>Dòng 2 nè</p><p>Dòng 3 nè</p><p>Dòng 4 nè</p><p>Dòng 5 nè</p></div>'
+			    },
+		        show: {
+		            effect: function() {
+		                $(this).slideDown();
+		            }
+		        },
+		        hide: {
+		            effect: function() {
+		                $(this).slideUp();
+		            }
+		        },
+	     	});
+	     	$('.show_popup4').qtip({
+		        content: {
+			        text: '<div class="qtip-contents"><p>Dòng 1 nè</p><p>Dòng 2 nè</p><p>Dòng 3 nè</p><p>Dòng 4 nè</p><p>Dòng 5 nè</p></div>'
+			    },
+		        show: {
+		            effect: function() {
+		                $(this).slideDown();
+		            }
+		        },
+		        hide: {
+		            effect: function() {
+		                $(this).slideUp();
+		            }
+		        },
+	     	});
+	 	});
+	</script>
+</body>
+</html>

@@ -138,6 +138,8 @@ img {
 .vipdb { color: #01b717 !important; }
 .inline-block { display: inline-block; }
 .text-red { color: red !important; }
+.link { color: #37a244; }
+.link:hover { color: #37a244; text-decoration: underline; }
 .wp100 { width: 100% !important }
 
 /*===== Header =====*/
@@ -1916,14 +1918,14 @@ img {
 .block-form-contact .form-group:last-child {
     margin-bottom: 0;
 }
-.block-form-contact label {
+.block-form-contact .label-title {
     font-family: Arial;
     line-height: 20px;
     font-weight: normal;
     font-size: 14px;
     color: #313131;
 }
-.block-form-contact label span {
+.block-form-contact .label-title span {
     color: #ff0000;
     font-weight: bold;
 }
@@ -1935,9 +1937,99 @@ img {
     font-size: 13px;
     font-family: Arial;
 }
-.block-form-contact input {
+.block-form-contact .input-height {
     height: 30px;
     line-height: 30px;
+}
+.block-form-contact input[type=checkbox] {
+    margin-top: 6px;
+}
+
+/*===== Block Register ======*/
+.block-login-register .block-content {
+    color: #313131 !important;
+    font-family: tahoma;
+}
+.block-register {
+    padding: 30px 44px !important;
+}
+.block-register-title {
+    text-transform: uppercase;
+    color: #37a344;
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
+}
+.block-form-register .label-title {
+    font-family: Arial;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #313131;
+}
+.block-form-register input, 
+.block-form-register textarea {
+    border: 1px solid #cac1ba;
+    padding: 7px 7px 6px;
+    color: #666;
+    font-size: 13px;
+    font-family: Arial;
+}
+.block-form-register .bootstrap-select .btn-default {
+    border-color: #cac1ba;
+    color: #313131;
+}
+.block-form-register .bootstrap-select .btn-default:hover,
+.block-form-register .bootstrap-select .btn-default.focus,
+.block-form-register .bootstrap-select .btn-default:focus {
+    border-color: #cac1ba;
+    color: #313131 !important;
+    outline: none !important;
+    background: transparent;
+}
+.block-form-register .bootstrap-select .btn-default.active,
+.block-form-register .bootstrap-select .btn-default:active,
+.block-form-register .bootstrap-select.open>.dropdown-toggle.btn-default {
+    background-color: transparent;
+}
+.block-form-register .input-height {
+    height: 32px;
+    line-height: 34px;
+}
+.block-form-register hr {
+    margin: 5px 0;
+    border-top: 1px solid #ccc;
+}
+.register-avata {
+    /*display: none;*/
+    width: 94px;
+    height: 94px;
+    overflow: hidden;
+    float: left;
+    margin-right: 4px;
+    position: relative;
+    background-color: transparent;
+    background-size: 94px 94px;
+}
+.register-avata .upload-item-delete {
+    background: url(../images/avatar-tool-delete.png) no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0;
+    border: 0;
+}
+.no-avatar {
+    width: 94px;
+    height: 94px;
+    overflow: hidden;
+    float: left;
+    margin-right: 4px;
+    position: relative;
+    background: url(../images/avatar-default.png) no-repeat scroll 0% 0%;
+    background-color: transparent;
+    background-size: 94px 94px;
 }
 
 /*===== Back Tab Qoute ======*/

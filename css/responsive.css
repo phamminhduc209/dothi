@@ -6,6 +6,16 @@
 /*----------------
 [Styles for devices(>1400px)]
 */
+@media (min-width: 1600px) {
+	.block-no-route {
+        padding-top: 150px;
+	    font-size: 18px;
+	}
+}
+
+/*----------------
+[Styles for devices(>1400px)]
+*/
 @media (max-width: 1400px) {
 	.block-no-route {
         padding-top: 40px;
