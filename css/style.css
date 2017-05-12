@@ -420,27 +420,36 @@ img {
     font-size: 18px;
     color: #5db467;
 }
-.selectpicker-cus .btn-default.active.focus,
-.selectpicker-cus .btn-default.active:focus,
-.selectpicker-cus .btn-default.active:hover,
-.selectpicker-cus .btn-default:active.focus, 
-.selectpicker-cus .btn-default:active:focus, 
-.selectpicker-cus .btn-default:active:hover, 
-.selectpicker-cus .open>.dropdown-toggle.btn-default.focus, 
-.selectpicker-cus .open>.dropdown-toggle.btn-default:focus,
-.selectpicker-cus .open>.dropdown-toggle.btn-default:hover {
+.block-hover-selectpicker .btn-default.active.focus,
+.block-hover-selectpicker .btn-default.active:focus,
+.block-hover-selectpicker .btn-default.active:hover,
+.block-hover-selectpicker .btn-default:active.focus, 
+.block-hover-selectpicker .btn-default:active:focus, 
+.block-hover-selectpicker .btn-default:active:hover, 
+.block-hover-selectpicker .open>.dropdown-toggle.btn-default.focus, 
+.block-hover-selectpicker .open>.dropdown-toggle.btn-default:focus,
+.block-hover-selectpicker .open>.dropdown-toggle.btn-default:hover {
     background: transparent;
 }
-.selectpicker-cus .btn-default:hover,
-.selectpicker-cus .btn-default.focus,
-.selectpicker-cus .btn-default:focus {
+.block-hover-selectpicker .btn-default:hover,
+.block-hover-selectpicker .btn-default.focus,
+.block-hover-selectpicker .btn-default:focus {
     background: transparent !important;
 }
-.selectpicker-cus .dropdown-menu>li>a:focus, .selectpicker-cus .dropdown-menu>li>a:hover {
+.block-hover-selectpicker .dropdown-menu>li>a:focus,
+.block-hover-selectpicker .dropdown-menu>li>a:hover {
     color: #ffffff;
     text-decoration: none;
     background-color: #44a34a;
     outline: none;
+}
+.block-hover-selectpicker .dropdown-menu>.active>a, 
+.block-hover-selectpicker .dropdown-menu>.active>a:focus, 
+.block-hover-selectpicker .dropdown-menu>.active>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #44a34a;
+    outline: 0;
 }
 .option-lv1 {
     padding-left: 30px !important;
@@ -1043,18 +1052,30 @@ img {
     font: bold 12px tahoma;
     margin: 5px 0 15px;
 }
+.block-post-news .form-group:last-child {
+    margin-bottom: 0;
+}
 .block-post-news .form-group label {
     color: #1d1312;
     padding-top: 12px;
     font: normal 12px tahoma;
+    text-align: left;
 }
 .block-post-news .form-group label span {
     color: #fc0000;
 }
-.block-post-news .form-group .btn-group {
-    width: 229px;
-}
 .block-post-news .form-group .w158 .btn-group {
+    width: 158px;
+}
+.block-post-news .form-group .block-col-width-right>span:first-child {
+    width: 96px;
+    display: inline-block;
+}
+.block-post-news .form-group .block-col-width-right .form-control2 {
+    width: 119px;
+    float: none;
+}
+.block-post-news .form-group .block-col-width-left .form-control2 {
     width: 158px;
 }
 .block-post-news .form-group .form-control2 {
@@ -1101,6 +1122,9 @@ img {
     top: 0;
     border: 0;
     position: absolute;
+}
+.block-post-news .col-sm-3.control-label {
+    width: 135px;
 }
 
 /*===== Map ======*/
@@ -1944,9 +1968,6 @@ img {
     height: 30px;
     line-height: 30px;
 }
-.block-form-contact input[type=checkbox] {
-    margin-top: 6px;
-}
 
 /*===== Block Register ======*/
 .block-login-register .block-content {
@@ -2055,6 +2076,38 @@ img {
     display: inline-block;
     overflow: hidden;
     padding: 0.625rem 1.25rem;
+}
+/* Modal Forgot Pass */
+#Forgotpassword .modal-dialog {
+    width: 470px;
+}
+#Forgotpassword .modal-header {
+    padding: 10px;
+    color: #fff;
+    background: #01b717;
+    border-bottom: 1px solid #a5dbf3;
+}
+
+#Forgotpassword .modal-header h4 {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+#Forgotpassword .modal-header button.close {
+    background: #fff;
+    color: #01b717;
+    margin-top: 0;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    float: none;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    font-size: 27px;
+    border-radius: 40px;
+    line-height: 32px;
+    text-align: center;
 }
 
 /*===== Back Tab Qoute ======*/
