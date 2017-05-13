@@ -1057,7 +1057,7 @@ img {
 }
 .block-post-news .form-group label {
     color: #1d1312;
-    padding-top: 12px;
+    /* padding-top: 12px; */
     font: normal 12px tahoma;
     text-align: left;
 }
@@ -1101,11 +1101,11 @@ img {
     z-index: -1;
 }
 .block-post-news .inputfile + label {
-    width: 95px;
-    height: 95px;
+    width: 94px;
+    height: 94px;
     background: url(../images/icon_upload2.png);
     cursor: pointer;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 .upload-item {
     width: 95px;
@@ -2067,7 +2067,7 @@ img {
     color: #36a346;
 }
 .inputfile + label {
-    max-width: 80%;
+    max-width: 100%;
     font-size: 1.25rem;
     font-weight: 700;
     text-overflow: ellipsis;
@@ -2076,6 +2076,15 @@ img {
     display: inline-block;
     overflow: hidden;
     padding: 0.625rem 1.25rem;
+}
+.show-image li {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.show-image li:last-child {
+    display: inline-block;
+    width: 95px;
+    height: 94px;
 }
 /* Modal Forgot Pass */
 #Forgotpassword .modal-dialog {
