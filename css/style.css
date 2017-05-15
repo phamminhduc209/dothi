@@ -536,6 +536,7 @@ img {
     padding: 13px 13px 10px !important;
     min-height: 325px;
     height: 346px;
+    overflow: hidden;
 }
 .block-news-default-right .block-news-list-right li {
     border-top: 1px solid #dedede;
@@ -1373,6 +1374,39 @@ img {
     font-size: 12px;
     margin-top: -4px;
 }
+.block-news-new .nav-tabs {
+    border-bottom: 1px solid #45a44b;
+}
+.block-news-new .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 0 0;
+    font-family: 'Roboto Condensed' !important;
+    text-transform: uppercase;
+    color: #ddd;
+    font-size: 18px;
+}
+.block-news-new .nav-tabs>li>a {
+    margin-right: 10px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+.block-news-new .nav-tabs>li.active>a, 
+.block-news-new .nav-tabs>li.active>a:focus,
+.block-news-new .nav-tabs>li.active>a:hover {
+    color: #016098;
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    border-bottom-color: transparent;
+}
+.block-news-new .nav>li>a:focus,
+.block-news-new .nav>li>a:hover {
+    color: #016098;
+    text-decoration: none;
+    background-color: transparent;
+}
 
 /*===== Block News New Related =====*/
 .block-news-new-related {
@@ -1413,31 +1447,6 @@ img {
     margin-top: 20px;
     line-height: 18px;
     text-align: right;
-}
-.block-news-new .nav-tabs {
-    border-bottom: 1px solid #45a44b;
-}
-.block-news-new .nav>li>a {
-    position: relative;
-    display: block;
-    padding: 0 0;
-}
-.block-news-new .nav-tabs>li>a {
-    margin-right: 10px;
-    line-height: 1.42857143;
-    border: 1px solid transparent;
-    border-radius: 4px 4px 0 0;
-}
-.block-news-new .nav-tabs>li.active>a, .block-news-new .nav-tabs>li.active>a:focus, .block-news-new .nav-tabs>li.active>a:hover {
-    color: #555;
-    cursor: default;
-    background-color: transparent;
-    border: none;
-    border-bottom-color: transparent;
-}
-.block-news-new .nav>li>a:focus, .block-news-new .nav>li>a:hover {
-    text-decoration: none;
-    background-color: transparent;
 }
 
 /*===== Block Search Project =====*/
@@ -2445,4 +2454,8 @@ img {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    z-index: 9 !important;
 }

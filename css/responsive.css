@@ -32,6 +32,12 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	.bx-thumbnail .item .slide_info {
+	    margin-left: 0px;
+	}
+}
+
 /*----------------
 [Styles for devices(>=992px and <=320px)]
 */
@@ -155,6 +161,12 @@
 	}
 	.has-open .logo-menu {
 	    display: block;
+	}
+	.submenu2 {
+	    background: transparent;
+	}
+	.block-news-default .block-news-list-right {
+		height: 332px;
 	}
 }
 
