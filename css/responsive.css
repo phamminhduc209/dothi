@@ -32,9 +32,12 @@
 	}
 }
 
+/*----------------
+[Styles for devices(>1024px)]
+*/
 @media (max-width: 1024px) {
 	.bx-thumbnail .item .slide_info {
-	    margin-left: 0px;
+	    width: 170px;
 	}
 }
 
@@ -168,25 +171,189 @@
 	.block-news-default .block-news-list-right {
 		height: 332px;
 	}
+	.block-news-new li.news-new-item .news-new-item-description {
+	    width: 70%;
+	}
 }
+
+/*----------------
+[Styles for devices(>800px)]
+*/
+@media (max-width: 800px) {
+	.block-news-default .block-news-list-right {
+	    height: auto;
+	    min-height: auto;
+	}
+	.block-news-default-left .col-sm-7,
+	.block-news-default-right .col-sm-5 {
+		width: 100%;
+	}
+	.block-news-default-right .block-pl0 {
+		padding-left: 10px;
+	}
+	.block-news-default .block-news-default-item {
+		margin-bottom: 10px;
+	}
+	.block-news-new li.news-new-item .news-new-item-description {
+	    width: 60%;
+	}
+	.news-new-item .date {
+	   display: none;
+	}
+	.bx-thumbnail .item .item-child {
+	    padding: 8px 5px;
+	    text-align: center;
+	}
+	.bx-thumbnail .item a.slide_title {
+	    display: inline-block;
+	    width: auto;
+	    border: 1px solid #e3e3e3;
+	    padding: 3px;
+	    background: #fff;
+	    vertical-align: middle;
+	}
+	.bx-thumbnail .item .slide_info {
+	    width: 100%;
+	}
+	.block-fengshui .fengshui-news-hot {
+	    width: 100%;
+	    float: left;
+	    text-align: center;
+	    margin-bottom: 5px;
+	}
+	.block-fengshui .fengshui-news-list {
+	    float: left;
+	    width: 100%;
+	    padding: 0 10px;
+	}
+	.block-features-support ul li a {
+		font: normal 11px tahoma;
+	    padding: 10px 15px;
+	}
+	.block-features-support ul li a i {
+	    font-size: 25px;
+	    margin-right: 5px;
+	}
+	.btn-new {
+	    right: 15px;
+	}
+	.footer .block-menu-bottom {
+	    height: auto;
+	    background: #015f95;
+	}
+	.footer .block-menu-bottom ul li {
+	    display: block;
+	    background: none;
+	}
+	.footer .block-menu-bottom ul li a {
+	    padding-left: 0;
+	}
+}
+
 
 /*----------------
 [Styles for devices(>768px)]
 */
 @media (max-width: 768px) {
 	.block-search .block-contents .search-content-input .row-select .col-xs-2 {
-		width: 100%;
+		width: 50%;
 	}
 	.block-search .block-contents .search-content-input .row-select:last-child .form-group {
 		margin-bottom: 7px;
 	}
+	.block-search .block-contents .search-content-input>.form-group {
+	    padding-left: 5px;
+		padding-right: 5px;
+	}
 	.block-search .block-contents .search-content-input .row-select .col-xs-2 {
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.block-search .block-contents .search-content-input .row-select .col-xs-2:last-child {
+	    padding-left: 5px;
+	    padding-right: 5px;
+	}
+	.block-search .block-contents .search-content-input .form-group .btn-search-home {
+	    width: 50%;
+	}
+	.block-news-new li.news-new-item .news-new-item-description {
+	    width: 61%;
 	}
 }
 
 /*----------------
-[Styles for devices(>475px)]
+[Styles for devices(>600px)]
 */
-@media (max-width: 475px) {}
+@media (max-width: 600px) {
+	.block-news-default .block-news-default-item {
+	    text-align: center;
+	}
+	.block-news-new li.news-new-item .news-new-item-description {
+	    width: 66%;
+	}
+	.block-advisory .col-xs-12,
+	.block-architectural .col-xs-12 {
+		width: 50%;
+	}
+	.bx-thumbnail .item .item-child {
+	    padding: 8px 5px;
+	    text-align: left;
+	}
+	.bx-thumbnail .item .slide_info {
+	    width: auto;
+	}
+}
+
+/*----------------
+[Styles for devices(>480px)]
+*/
+@media (max-width: 480px) {
+	.block-news-new li.news-new-item {
+	    text-align: center;
+	}
+	.block-news-new li.news-new-item .news-new-item-head {
+	    width: auto;
+	    float: none;
+	    margin-right: 0;
+	}
+	.block-news-new li.news-new-item .news-new-item-description {
+	    width: 100%;
+	}
+	.block-get-news .block-contents {
+	    background: none;
+	    height: auto;
+	    margin-top: 0;
+	    position: relative;
+	}
+	.block-get-news input {
+	    float: left;
+	    width: 340px;
+	    margin: 0;
+	}
+	.block-get-news .btnConfirm {
+	    right: 0;
+	    top: 0;
+	    width: 120px;
+	}
+}
+
+/*----------------
+[Styles for devices(>375px)]
+*/
+@media (max-width: 375px) {
+	.block-get-news input {
+	    width: 235px;
+	}
+}
+
+/*----------------
+[Styles for devices(>320px)]
+*/
+@media (max-width: 320px) {
+	.block-get-news input {
+	    width: 185px;
+	}
+	.block-get-news .btnConfirm {
+	    width: 115px;
+	}
+}
