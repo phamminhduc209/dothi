@@ -177,6 +177,22 @@
 }
 
 /*----------------
+[Styles for devices(>991px)]
+*/
+@media (max-width: 991px) {
+	/* Langding Page */
+	.nav-tabs-langding .tabs-item {
+	    font-size: 11px;
+	    border-bottom: solid 1px #fff;
+	    border-left: solid 1px #fff;
+	}
+	.nav-tabs-langding .tabs-item:hover:after,
+	.nav-tabs-langding .active .tabs-item:after {
+        display: none;
+	}
+}
+
+/*----------------
 [Styles for devices(>800px)]
 */
 @media (max-width: 800px) {
