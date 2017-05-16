@@ -1180,6 +1180,9 @@ img {
     line-height: 20px;
     border: 1px solid transparent;
     border-radius: 0;
+    font-family: 'Arial' !important;
+    font-size: 14px;
+    text-transform: none;
 }
 .block-news-cate .block-title-catenews .nav-tabs.nav-tabs-cus>li.active>a,
 .block-news-cate .block-title-catenews .nav-tabs.nav-tabs-cus>li.active>a:focus,
@@ -1265,8 +1268,8 @@ img {
     float: right;
     background: #45a44b;
     color: #fff;
-    width: 104px;
-    line-height: 31px;
+    width: 100px;
+    line-height: 27px;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1981,6 +1984,9 @@ img {
 }
 
 /*===== Block Register ======*/
+.block-login-register .form-group {
+    margin-bottom: 10px;
+}
 .block-login-register .block-content {
     color: #313131 !important;
     font-family: tahoma;
@@ -2096,6 +2102,18 @@ img {
     display: inline-block;
     width: 95px;
     height: 94px;
+}
+/* Login */
+.form-group-login {
+    margin-bottom: 0 !important;
+}
+.block-login-register .form-horizontal .checkbox,
+.block-login-register .form-horizontal .checkbox-inline,
+.block-login-register .form-horizontal .radio,
+.block-login-register .form-horizontal .radio-inline {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 /* Modal Forgot Pass */
 #Forgotpassword .modal-dialog {
