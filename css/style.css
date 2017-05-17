@@ -141,7 +141,8 @@ img {
 .text-red { color: red !important; }
 .link { color: #37a244; }
 .link:hover { color: #37a244; text-decoration: underline; }
-.wp100 { width: 100% !important }
+.wp100 { width: 100% !important; }
+.mb0 { margin-bottom: 0 !important; }
 
 /*===== Header =====*/
 .header {
@@ -1307,7 +1308,7 @@ img {
     border: 1px solid transparent;
     background: #f0f0f0;
     border-radius: 0;
-    font-size: 13pt;
+    font-size: 15px;
     color: #ababab;
     font-family: 'Roboto Condensed',Arial;
     text-transform: uppercase;
@@ -1335,7 +1336,7 @@ img {
     border: 1px solid transparent;
     background: #f0f0f0;
     border-radius: 0;
-    font-size: 13pt;
+    font-size: 15px;
     color: #ababab;
     font-family: 'Roboto Condensed',Arial;
     text-transform: uppercase;
@@ -1362,15 +1363,17 @@ img {
 .block-related-list .related-item .pr-item-title {
     margin-bottom: 5px;
     text-rendering: geometricPrecision;
+    height: 40px;
+    overflow: hidden;
 }
 .block-related-list .related-item .pr-item-title a {
     font-weight: bold;
     color: #016096;
     font-family: Arial;
+    display: block;
 }
 .block-related-list .related-item .pr-item-img {
     width: 111px;
-    height: 67px;
     float: left;
 }
 .block-related-list .related-item .pr-item-text {
@@ -1670,13 +1673,14 @@ img {
 }
 .news-with-region-content .news-with-region-img {
     width: 87px;
-    height: 59px;
     float: left;
 }
 .news-with-region-content .news-with-region-info {
     float: left;
-    height: auto;
-    width: 209px;
+    width: -moz-calc(100% - 93px);
+    width: -webkit-calc(100% - 93px);
+    width: -o-calc(100% - 93px);
+    width: calc(100% - 93px);
     margin-left: 6px;
     font-size: 12px;
     font-family: Tahoma;
@@ -1793,7 +1797,6 @@ img {
     margin: 15px 0;
 }
 .block-project .project-item {
-    min-height: 264px;
     border: 1px solid #e3e3e3;
     padding: 8px 7px;
     background: #fff;
@@ -2229,6 +2232,12 @@ img {
     background-color: #1260ab;
     border: none;
     border-bottom-color: transparent;
+}
+.block-form-tranfer {
+    margin-top: 10px;
+}
+.block-form-tranfer .form-group {
+    margin-bottom: 10px;
 }
 
 /* Collapse */
