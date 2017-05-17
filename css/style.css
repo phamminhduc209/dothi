@@ -981,6 +981,9 @@ img {
 .block-slider-home .owl-next {
     position: absolute;
     top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
 }
 .block-slider-home .owl-prev {
     left: 15px;
@@ -1371,12 +1374,13 @@ img {
     float: left;
 }
 .block-related-list .related-item .pr-item-text {
-    width: 175px;
-    height: auto;
+    width: -moz-calc(100% - 118px);
+    width: -webkit-calc(100% - 118px);
+    width: -o-calc(100% - 118px);
+    width: calc(100% - 118px);
     float: left;
     margin-left: 7px;
     font-size: 12px;
-    margin-top: -4px;
 }
 .block-news-new .nav-tabs {
     border-bottom: 1px solid #45a44b;
@@ -2437,17 +2441,6 @@ img {
 /*===== Langding Page ======*/
 body.langding_page {
     background: none;
-}
-.block-head {
-    min-height: 130px;
-    background: url(../images/head-project.jpg) no-repeat center top;
-}
-.block-head h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    padding: 20px 0 0 0;;
-    text-transform: uppercase;
 }
 .block-main {
     background: #fff;
