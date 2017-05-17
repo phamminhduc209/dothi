@@ -445,6 +445,14 @@
 	.bx-thumbnail .item .slide_info {
 	    width: 160px;
 	}
+	.extra-news .extra-news-l,
+	.extra-news .extra-news-r {
+	    float: left;
+	    text-align: left;
+	    width: 100%;
+	    font-family: 'Roboto Condensed';
+	    font-size: 12px;
+	}
 }
 
 /*----------------
