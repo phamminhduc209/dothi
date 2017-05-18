@@ -2454,6 +2454,34 @@ body.langding_page {
 .block-main {
     background: #fff;
 }
+h2.page-title,
+h3.page-title-child {
+    font-family: 'Roboto', sans-serif;
+    color: #272727;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: normal;
+    margin: 0px;
+    margin: 40px 0px 25px;
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #dddddd;
+}
+h2.page-title:after,
+h3.page-title-child:after {
+    content: '';
+    position: absolute;
+    bottom: -0px;
+    left: 0px;
+    width: 70px;
+    height: 2px;
+    background: #1d5f93;
+}
+h3.page-title-child {
+    font-size: 18px;
+    font-style: normal !important;
+    border-bottom: none;
+}
 .block-langding .nav-tabs {
     border-bottom: none;
 }
