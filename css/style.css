@@ -2457,43 +2457,11 @@ body.langding_page {
 .block-langding .nav-tabs {
     border-bottom: none;
 }
-.gutter-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-.gutter-0 > [class*='col-'] {
-    padding-right: 0px;
-    padding-left: 0px;
-}
-.nav-tabs-langding .tabs-item {
-    text-align: center;
-    display: block;
-    color: #030303;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    background: #f5f5f5;
-    padding-bottom: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 80px;
-    border-left: solid 1px #dddddd;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
-}
-.nav-tabs-langding .tabs-item-logo {
-    padding: 5px;
-    border: solid 1px #ddd;
-    background: #fff;
-}
-.nav-tabs-langding .tabs-item .icon {
+.block-langding .nav-tabs li .icon,
+.block-langding .nav-tabs li .icon .fa {
     display: block;
     width: 100%;
     height: 45px;
-    line-height: 45px;
     border: 0px;
     margin: 0px auto;
     text-align: center;
@@ -2503,8 +2471,8 @@ body.langding_page {
     -o-transition: all .4s ease;
     transition: all .4s ease;
 }
-.nav-tabs-langding .tabs-item .icon svg,
-.nav-tabs-langding .tabs-item .icon img {
+.block-langding .nav-tabs li .icon svg,
+.block-langding .nav-tabs li .icon .fa {
     margin: 0;
     width: 30px;
     position: absolute;
@@ -2516,92 +2484,109 @@ body.langding_page {
     -o-transition: all .4s ease;
     transition: all .4s ease;
 }
-.nav-tabs-langding .tabs-item-logo .icon img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    top: 0px;
-    left: 0px;
-    margin-left: 0px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
-.nav-tabs-langding .tabs-item-logo .icon {
-    height: 100%;
-    text-align: center;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-.nav-tabs-langding .payment {
-    padding-bottom: 5px;
-    line-height: 1.2em;
-}
-.nav-tabs-langding .brochure .icon i {
+.block-langding .nav-tabs li .icon .fa {
     font-size: 25px;
     color: #979797;
 }
-.nav-tabs-langding .tabs-item:hover,
-.nav-tabs-langding .active .tabs-item {
-    background: #e21a22;
-    color: #fff;
+.block-langding .nav-tabs>li>a {
+    text-align: center;
+    display: block;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    height: 80px;
+    border-left: solid 1px #dddddd;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.block-langding .nav-tabs>li>a {
+    margin-right: 0;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 0;
+    color: #030303;
+    background: #f5f5f5;
+}
+.block-langding .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 0;
+}
+.block-langding .nav-tabs>li.active>a,
+.block-langding .nav-tabs>li.active>a:focus,
+.block-langding .nav-tabs>li.active>a:hover {
+    color: #fff !important;
+    cursor: default;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    background: #1d5f93 !important;
     -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.35);
 }
-.nav-tabs-langding .tabs-item:hover svg path,
-.nav-tabs-langding .active .tabs-item svg path {
+.block-langding .nav-tabs>li.active>a svg path,
+.block-langding .nav-tabs>li.active>a:focus svg path,
+.block-langding .nav-tabs>li.active>a:hover svg path {
     fill: #fff;
 }
-.nav-tabs-langding .tabs-item:hover .icon i,
-.nav-tabs-langding .active .tabs-item .icon i {
+.block-langding .nav-tabs>li.active>a .fa,
+.block-langding .nav-tabs>li.active>a:focus .fa,
+.block-langding .nav-tabs>li.active>a:hover .fa {
     color: #fff;
-} 
-.nav-tabs-langding .tabs-item:hover:after,
-.nav-tabs-langding .active .tabs-item:after {
+}
+.block-langding  .nav>li>a:focus,
+.block-langding  .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #1d5f93;
+    color: #fff;
+}
+.block-langding  .nav>li>a:focus svg path,
+.block-langding  .nav>li>a:hover svg path {
+    fill: #fff;
+}
+.block-langding  .nav>li>a:hover:after,
+.block-langding  .nav>li.active a:after {
     content: "\e252";
     font-family: 'Glyphicons Halflings';
     position: absolute;
     bottom: -13px;
     left: 50%;
     margin-left: -7px;
-    color: #e21a22;
+    color: #1d5f93;
 }
-.block-langding .block-content .tabs-child {
-    margin-top: 20px;
+.block-langding  .nav>li>a:focus .fa,
+.block-langding  .nav>li>a:hover .fa {
+    color: #fff;
 }
-.block-langding .block-content .tabs-child .tab-contents {
-    display: none;
+.block-langding .nav-tabs li a.Payment {
+    line-height: 1.2em;
 }
-.block-langding .block-content .tabs-child .tab-contents.active{
-    display: inherit;
+.tabs-item-logo {
+    padding: 5px;
+    border: solid 1px #ddd;
+    background: #fff;
+    height: 80px;
 }
-.block-langding h2.page-title {
-    font-family: 'Arial', sans-serif;
-    color: #272727;
-    font-weight: 700;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin: 15px 0px 10px;
-    position: relative;
-    padding-bottom: 15px;
-    border-bottom: solid 1px #dddddd;
-    font-style: normal !important;
+.block-langding .nav-tabs li .tabs-item-logo .icon {
+    height: 100%;
+    text-align: center;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
-.block-langding h2.page-title:after {
-    content: '';
+.block-langding .nav-tabs li .tabs-item-logo .icon img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     position: absolute;
-    bottom: -0px;
-    left: 0px;
-    width: 70px;
-    height: 2px;
-    background: #1d5f93;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 /*===== Back To Top ======*/

@@ -190,15 +190,15 @@
 [Styles for devices(>991px)]
 */
 @media (max-width: 991px) {
-	/* Langding Page */
-	.nav-tabs-langding .tabs-item {
-	    font-size: 11px;
-	    border-bottom: solid 1px #fff;
-	    border-left: solid 1px #fff;
+	.block-langding .nav-tabs>li>a {
+	    font-size: 12px;
 	}
-	.nav-tabs-langding .tabs-item:hover:after,
-	.nav-tabs-langding .active .tabs-item:after {
-        display: none;
+	.tabs-item-logo {
+	    border-bottom: solid 1px #ddd;
+	}
+	.block-langding  .nav>li>a:hover:after,
+	.block-langding  .nav>li.active a:after {
+	    display: none;
 	}
 }
 
@@ -486,6 +486,11 @@
 	.block-col-width-right .form-control-res,
 	.form-control-res {
 	    width: 95% !important;
+	}
+	.block-langding .nav-tabs>li {
+		width: 50% !important;
+		border-bottom: solid 2px #fff;
+		border-left: solid 2px #fff;
 	}
 }
 
