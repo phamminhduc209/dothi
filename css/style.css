@@ -2459,9 +2459,8 @@ h3.page-title-child {
     font-family: 'Roboto', sans-serif;
     color: #272727;
     font-weight: 700;
-    font-size: 24px;
-    text-transform: normal;
-    margin: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
     margin: 40px 0px 25px;
     position: relative;
     padding-bottom: 15px;
@@ -2481,6 +2480,7 @@ h3.page-title-child {
     font-size: 18px;
     font-style: normal !important;
     border-bottom: none;
+    text-transform: none;
 }
 .block-langding .nav-tabs {
     border-bottom: none;
