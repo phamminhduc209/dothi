@@ -150,7 +150,7 @@
 								</i>
 							</p>
 						</li>
-						<li role="presentation" class="active">
+						<li role="presentation">
 							<a href="#About" aria-controls="About" role="tab" data-toggle="tab">
 								<i class="icon">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve" class="svg replaced-svg">
@@ -201,7 +201,7 @@
 					    		Brochure
 				    		</a>
 			    		</li>
-					    <li role="presentation">
+					    <li role="presentation" class="active">
 					    	<a href="#Contact" aria-controls="Contact" role="tab" data-toggle="tab">
 					    		<i class="icon">
 						    		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 22 14" enable-background="new 0 0 22 14" xml:space="preserve" class="svg replaced-svg"><g><g><path fill="#979797" d="M11,8.4L11,8.4c0.2,0,0.3,0,0.5-0.1l0,0c0,0,0,0,0,0L12,7.9L22,0c0,0-0.1,0-0.1,0H0.1c0,0-0.1,0-0.1,0    l10.5,8.2C10.6,8.3,10.8,8.4,11,8.4z M0,1.1v11.6L7.5,7L0,1.1z M14.5,7l7.5,5.7V1.1L14.5,7z M12.1,8.9c-0.3,0.2-0.7,0.4-1.1,0.4    c-0.4,0-0.8-0.1-1.1-0.4L8.2,7.6L0,13.9v0C0,13.9,0.1,14,0.1,14h21.8c0.1,0,0.1-0.1,0.1-0.1v0l-8.2-6.3L12.1,8.9z"></path>
@@ -215,7 +215,7 @@
 
 				<div class="block-content">
 					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane fade in active" id="About">
+						<div role="tabpanel" class="tab-pane fade" id="About">
 							<div class="page-block">
 								<h2 class="page-title">VỊ TRÍ VÀNG - DỄ DÀNG DI CHUYỂN</h2>
 								<div class="page-content editor-content">
@@ -238,67 +238,67 @@
 						<div role="tabpanel" class="tab-pane fade" id="Brochure">
 							Brochure
 						</div><!-- /tab-pane -->
-						<div role="tabpanel" class="tab-pane fade" id="Contact">
+						<div role="tabpanel" class="tab-pane fade in active" id="Contact">
 							<h2 class="page-title">Liên Hệ</h2>
 							<div class="row">
 								<div class="col-sm-6 col-xs-12">
 									<h3 class="page-title-child">công ty TNHH BĐS Sunland Sài Gòn</h3>
-									<table class="table table-no-border">
-										<tr>
-											<td>
-												<label>Địa chỉ:</label>
-											</td>
-											<td>
-												85A Phan Kế Bính, Đa Kao, quận 1, TP. Hồ Chí Minh
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<label>Điện thoại :</label>
-											</td>
-											<td>0000.000.000</td>
-										</tr>
-										<tr>
-											<td>
-												<label>Email :</label>
-											</td>
-											<td>
-												<a href="mailto:joe@example.com?subject=feedback">email me</a>
-											</td>
-										</tr>
-									</table>
+									<div class="block-table-nobor-tab">
+										<table class="table table-no-border">
+											<tr>
+												<td>
+													<label>Địa chỉ:</label>
+												</td>
+												<td>
+													85A Phan Kế Bính, Đa Kao, quận 1, TP. Hồ Chí Minh
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<label>Điện thoại :</label>
+												</td>
+												<td>0000.000.000</td>
+											</tr>
+											<tr>
+												<td>
+													<label>Email :</label>
+												</td>
+												<td>
+													<a href="mailto:joe@example.com?subject=feedback">email me</a>
+												</td>
+											</tr>
+										</table>
+									</div>
 								</div>
 								<div class="col-sm-6 col-xs-12">
 									<h3 class="page-title-child">Form liên hệ chủ dự án</h3>
-									<form action="#" method="POST" class="form-horizontal block-form-contact" accept-charset="utf-8">
-		                      			<div class="form-group">
-		                      				<!-- <label class="col-sm-2 control-label label-title">Họ tên <span class="text-red">(*)</span></label> -->
-		                      				<div class="col-sm-9">
-		                      					<input type="text" class="input-height" placeholder="Họ và Tên *">
-		                      				</div>
+									<form action="#" method="POST" class="form-horizontal block-contact-form-tab">
+		                      			<div class="form-group group">
+		                      				<input type="text">
+		                      				<span class="highlight"></span>
+		                      				<span class="bar"></span>
+    										<label>Họ và Tên *</label>
+		                      			</div><!-- /form-group -->
+		                      			<div class="form-group group">
+		                      				<input type="text">
+		                      				<span class="highlight"></span>
+		                      				<span class="bar"></span>
+    										<label>Điện thoại *</label>
+		                      			</div><!-- /form-group -->
+		                      			<div class="form-group group">
+		                      				<input type="text">
+		                      				<span class="highlight"></span>
+		                      				<span class="bar"></span>
+    										<label>Email *</label>
+		                      			</div><!-- /form-group -->
+		                      			<div class="form-group group">
+		                      				<textarea rows="5" name="txtarea" placeholder=""></textarea>
+		                      				<span class="highlight"></span>
+		                      				<span class="bar"></span>
+		                      				<label>Nội Dung</label>
 		                      			</div><!-- /form-group -->
 		                      			<div class="form-group">
-		                      				<!-- <label class="col-sm-2 control-label label-title">Điện thoại</label> -->
-		                      				<div class="col-sm-9">
-		                      					<input type="text" class="input-height" placeholder="Điện Thoại *">
-		                      				</div>
-		                      			</div><!-- /form-group -->
-		                      			<div class="form-group">
-		                      				<!-- <label class="col-sm-2 control-label label-title">Email</label> -->
-		                      				<div class="col-sm-9">
-		                      					<input type="text" class="input-height" placeholder="Email *">
-		                      				</div>
-		                      			</div><!-- /form-group -->
-		                      			<div class="form-group">
-		                      				<!-- <label class="col-sm-2 control-label label-title">Nội dung <span class="text-red">(*)</span></label> -->
-		                      				<div class="col-sm-9">
-		                      					<textarea rows="5" name="txtarea" class="" placeholder="Nội Dung"></textarea>
-		                      				</div>
-		                      			</div><!-- /form-group -->
-		                      			<div class="form-group">
-											<div class="col-sm-offset-3 col-sm-10">
-											  	<button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Gửi Email</button>
-											</div>
+											<button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Gửi Email</button>
 										</div><!-- /form-group -->
 		                      		</form>
 								</div>
@@ -390,6 +390,33 @@
 				var widthItem = width/childDivCount;
 				$('#nav-tabs-langding li').css("width", widthItem);
 		   });
+		});
+		$(window, document, undefined).ready(function() {
+			$('input , textarea').blur(function() {
+			var $this = $(this);
+			if ($this.val())
+		  		$this.addClass('used');
+			else
+		  		$this.removeClass('used');
+			});
+			var $ripples = $('.ripples');
+			$ripples.on('click.Ripples', function(e) {
+				var $this = $(this);
+				var $offset = $this.parent().offset();
+				var $circle = $this.find('.ripplesCircle');
+
+				var x = e.pageX - $offset.left;
+				var y = e.pageY - $offset.top;
+
+				$circle.css({
+					top: y + 'px',
+					left: x + 'px'
+				});
+				$this.addClass('is-active');
+			});
+			$ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function(e) {
+				$(this).removeClass('is-active');
+			});
 		});
 	</script>
 
