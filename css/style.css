@@ -143,6 +143,7 @@ img {
 .link:hover { color: #37a244; text-decoration: underline; }
 .wp100 { width: 100% !important; }
 .mb0 { margin-bottom: 0 !important; }
+.po-re { position: relative; }
 
 /*===== Header =====*/
 .header {
@@ -512,9 +513,11 @@ img {
 #site-main {
     padding: 10px 0;
     background: #fafafa;
+    position: relative;
 }
 .main {
     background: #fafafa;
+    position: relative;
 }
 
 /*===== Block News Default ======*/
@@ -1940,26 +1943,21 @@ img {
 }
 
 /*===== Block Adv ======*/
-#advLeft {
-    height: 0;
-    width: 0;
-}
-#advLeft .ban_scroll {
-    left: 1px;
-    text-align: right;
-}
+#advLeft,
 #advRight {
-    height: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 999999999;
+    top: 50px;
+    -webkit-box-shadow: -1px 6px 46px -4px rgba(150,150,150,1);
+    -moz-box-shadow: -1px 6px 46px -4px rgba(150,150,150,1);
+    box-shadow: -1px 6px 46px -4px rgba(150,150,150,1);
+    -webkit-transition: 0.15s linear;
+    -moz-transition: 0.15s linear;
+    -ms-transition: 0.15s linear;
+    -o-transition: 0.15s linear;
+    transition: 0.15s linear; 
 }
-.banner_scroll {
-    overflow: hidden;
-    position: absolute;
-    z-index: 10;
-}
-.banner_scroll .item a {
-    margin-bottom: 10px;
-}
-
 /*===== Block Contact ======*/
 .form-horizontal.block-form-contact .form-group {
     margin-right: -10px;

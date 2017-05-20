@@ -39,6 +39,10 @@
 	.bx-thumbnail .item .slide_info {
 	    width: 170px;
 	}
+	#advLeft,
+	#advRight {
+		display: none;
+	}
 }
 
 /*----------------

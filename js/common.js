@@ -63,69 +63,86 @@
 
     /*  Collapse */
     $('.collapse.in').prev('.panel-heading').addClass('active');
-        $('#accordion, #bs-collapse')
-        .on('show.bs.collapse', function (a) {
-            $(a.target).prev('.panel-heading').addClass('active');
-        })
-        .on('hide.bs.collapse', function (a) {
-            $(a.target).prev('.panel-heading').removeClass('active');
+    $('#accordion, #bs-collapse')
+    .on('show.bs.collapse', function (a) {
+        $(a.target).prev('.panel-heading').addClass('active');
+    })
+    .on('hide.bs.collapse', function (a) {
+        $(a.target).prev('.panel-heading').removeClass('active');
+    });
+
+    // Screen min width 1024 and max width 1339, show menu scroll on top.
+    $(function() {
+        var width_screen = $(window).width();
+        var Advscroll_left = $('#advLeft');
+        var Advscroll_right = $('#advRight');
+
+        var header = $(".header").height();
+        var nav = $("#mainNav").height();
+        var slide_home = $(".block-slider-home").height();
+        var block_search = $(".block-search").height();
+        var abc = $("#site-main .container").width();
+
+        var Top1 = header + nav + slide_home + block_search + 28;
+        var Top2 = header + nav + 10;
+        var position = ((width_screen - abc)/2) - 117;
+
+        var Top = $(".main").offset().top;
+        var Top_end  = $(".main").offset().top + $(".main").height();
+
+        if($(".page_home")){
+            Advscroll_left.css({
+                "top": Top1,
+                "left":  position,
+            });
+            Advscroll_right.css({
+                "top": Top1,
+                "right":  position,
+            });
+        }else{
+            Advscroll_left.css({
+                "top": Top2,
+                "left":  position,
+            });
+            Advscroll_right.css({
+                "top": Top2,
+                "right":  position,
+            });
+        }
+
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= Top1) {
+                Advscroll_left.css({
+                    "top": "45px",
+                    "left":  position,
+                });
+                Advscroll_right.css({
+                    "top": "45px",
+                    "right":  position,
+                });
+            }else{
+                if($(".page_home")){
+                    Advscroll_left.css({
+                        "top": Top1 - scroll,
+                        "left":  position,
+                    });
+                    Advscroll_right.css({
+                        "top": Top1 - scroll,
+                        "right":  position,
+                    });
+                }else{
+                    Advscroll_left.css({
+                        "top": Top2 - scroll,
+                        "left":  position,
+                    });
+                    Advscroll_right.css({
+                        "top": Top2 - scroll,
+                        "right":  position,
+                    });
+                }
+            }
         });
+    });
 
 })(jQuery); // End of use strict
-
-// Adv scroll top
-$(document).ready(function() {
-    if ($("#advLeft").show(), $("#advRight").show(), l = ".banner_scroll .item", l.length > 0) {
-        var r = 1e3,
-            o = $("#advLeft .banner_scroll").width(),
-            a = $("#advRight .banner_scroll").width(),
-            v = ($(document).width() - r) / 2 + r,
-            e = ($(document).width() - r) / 2 - o;
-        $(window).scroll(function() {
-            h()
-        });
-        $(window).resize(function() {
-            h()
-        });
-
-        function h() {
-            if ($(document.body).width() < r + o + a) {
-                $(".banner_scroll").css("display", "none");
-                return
-            }
-            $(".banner_scroll").css("display", "block");
-            v = ($(document.body).width() - 0 - r) / 2 + r + 10;
-            e = o == null ? ($(document.body).width() - 0 - r) / 2 - a - 10 : ($(document.body).width() - 0 - r) / 2 - o - 10;
-            var f = 0,
-                n = $(window).scrollTop(),
-                u = window.location.pathname != "/" ? 160 : 460,
-                t = 0,
-                i = $(".footer").position().top - $(".banner_scroll").height() - 6;
-            t = n < u ? u - n : n >= i ? 246 : 0;
-            $("#advLeft .banner_scroll .item").length != 0 && (n >= i ? $("#advLeft .banner_scroll").css({
-                position: "fixed",
-                bottom: t,
-                top: "",
-                left: e
-            }) : $("#advLeft .banner_scroll").css({
-                position: "fixed",
-                top: t + 43,
-                bottom: "",
-                left: e
-            }));
-            $("#advRight .banner_scroll .item").length != 0 && (n >= i ? $("#advRight .banner_scroll").css({
-                position: "fixed",
-                bottom: t,
-                top: "",
-                right: e
-            }) : $("#advRight .banner_scroll").css({
-                position: "fixed",
-                top: t + 43,
-                bottom: "",
-                right: e
-            }));
-            f = n
-        }
-        h()
-    }
-});
