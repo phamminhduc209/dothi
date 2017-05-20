@@ -71,78 +71,81 @@
         $(a.target).prev('.panel-heading').removeClass('active');
     });
 
-    // Screen min width 1024 and max width 1339, show menu scroll on top.
-    $(function() {
-        var width_screen = $(window).width();
-        var Advscroll_left = $('#advLeft');
-        var Advscroll_right = $('#advRight');
 
-        var header = $(".header").height();
-        var nav = $("#mainNav").height();
-        var slide_home = $(".block-slider-home").height();
-        var block_search = $(".block-search").height();
-        var abc = $("#site-main .container").width();
+    setTimeout(function(){
+        // Adv
+        $(function() {
+            var width_screen = $(window).width();
+            var Advscroll_left = $('#advLeft');
+            var Advscroll_right = $('#advRight');
 
-        var Top1 = header + nav + slide_home + block_search + 28;
-        var Top2 = header + nav + 10;
-        var position = ((width_screen - abc)/2) - 117;
+            var header = $(".header").height();
+            var nav = $("#mainNav").height();
+            var slide_home = $(".block-slider-home").height();
+            var block_search = $(".block-search").height();
+            var abc = $("#site-main .container").width();
 
-        var Top = $(".main").offset().top;
-        var Top_end  = $(".main").offset().top + $(".main").height();
+            var Top1 = header + nav + slide_home + block_search + 28;
+            var Top2 = header + nav + 10;
+            var position = ((width_screen - abc)/2) - 117;
 
-        if($(".page_home")){
-            Advscroll_left.css({
-                "top": Top1,
-                "left":  position,
-            });
-            Advscroll_right.css({
-                "top": Top1,
-                "right":  position,
-            });
-        }else{
-            Advscroll_left.css({
-                "top": Top2,
-                "left":  position,
-            });
-            Advscroll_right.css({
-                "top": Top2,
-                "right":  position,
-            });
-        }
+            var Top = $(".main").offset().top;
+            var Top_end  = $(".main").offset().top + $(".main").height();
 
-        $(window).scroll(function() {
-            var scroll = $(window).scrollTop();
-            if (scroll >= Top1) {
+            if($(".page_home")){
                 Advscroll_left.css({
-                    "top": "45px",
+                    "top": Top1,
                     "left":  position,
                 });
                 Advscroll_right.css({
-                    "top": "45px",
+                    "top": Top1,
                     "right":  position,
                 });
             }else{
-                if($(".page_home")){
+                Advscroll_left.css({
+                    "top": Top2,
+                    "left":  position,
+                });
+                Advscroll_right.css({
+                    "top": Top2,
+                    "right":  position,
+                });
+            }
+
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll >= Top1) {
                     Advscroll_left.css({
-                        "top": Top1 - scroll,
+                        "top": "45px",
                         "left":  position,
                     });
                     Advscroll_right.css({
-                        "top": Top1 - scroll,
+                        "top": "45px",
                         "right":  position,
                     });
                 }else{
-                    Advscroll_left.css({
-                        "top": Top2 - scroll,
-                        "left":  position,
-                    });
-                    Advscroll_right.css({
-                        "top": Top2 - scroll,
-                        "right":  position,
-                    });
+                    if($(".page_home")){
+                        Advscroll_left.css({
+                            "top": Top1 - scroll,
+                            "left":  position,
+                        });
+                        Advscroll_right.css({
+                            "top": Top1 - scroll,
+                            "right":  position,
+                        });
+                    }else{
+                        Advscroll_left.css({
+                            "top": Top2 - scroll,
+                            "left":  position,
+                        });
+                        Advscroll_right.css({
+                            "top": Top2 - scroll,
+                            "right":  position,
+                        });
+                    }
                 }
-            }
+            });
         });
-    });
+    }, 5000); 
 
 })(jQuery); // End of use strict
