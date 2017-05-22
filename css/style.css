@@ -528,6 +528,9 @@ img {
     background: #fff;
     min-height: 313px;
 }
+.block-news-default .block-news-default-item .block-thumb img {
+    width: 100%;
+}
 .block-news-default .block-news-default-item .block-title {
     margin: 10px 0 10px 0;
 }
@@ -588,6 +591,9 @@ img {
     width: 170px;
     float: left;
     margin-right: 10px;
+}
+.block-news-new li.news-new-item .news-new-item-head img {
+    width: 100%;
 }
 .block-news-new li.news-new-item .news-new-item-description {
     width: 72%;
@@ -728,6 +734,9 @@ img {
     width: 48%;
     float: left;
 }
+.block-fengshui .fengshui-news-hot img {
+    width: 100%;
+}
 .block-fengshui .fengshui-news-list {
     float: right;
     width: 49%;
@@ -788,6 +797,10 @@ img {
     background: url(../images/icon_butlet.png) no-repeat 8px 7px;
     display: block;
     padding-left: 23px;
+}
+.block-advisory .inews-advisory-hot img,
+.block-architectural .inews-architectural-hot img {
+    width: 100%;
 }
 
 /* Block Search */
@@ -885,6 +898,9 @@ img {
     box-shadow: none;
     border: none;
     background: #fff;
+}
+.block-slide-sidebar .bx-wrapper img {
+    width: 100%;
 }
 .large-item h4 {
     margin-top: 15px;
@@ -1379,6 +1395,9 @@ img {
     width: 111px;
     float: left;
 }
+.block-related-list .related-item .pr-item-img img {
+    width: 100%;
+}
 .block-related-list .related-item .pr-item-text {
     width: -moz-calc(100% - 118px);
     width: -webkit-calc(100% - 118px);
@@ -1505,6 +1524,9 @@ img {
     width: 203px;
     float: left;
     margin-right: 10px;
+}
+.block-article-list .article-list-news .article-news-item .article-news-item-head img {
+    width: 100%;
 }
 .block-article-list .article-list-news .article-news-item .article-news-item-description {
     width: 66%;
@@ -1644,6 +1666,9 @@ img {
     width: 120px;
     height: 79px;
 }
+.all-news-new-item .all-news-new-img img {
+    width: 100%;
+}
 .all-news-new-item .all-news-new-info {
     float: left;
     width: 179px;
@@ -1677,6 +1702,9 @@ img {
 .news-with-region-content .news-with-region-img {
     width: 87px;
     float: left;
+}
+.news-with-region-content .news-with-region-img img {
+    width: 100%;
 }
 .news-with-region-content .news-with-region-info {
     float: left;
@@ -1804,6 +1832,9 @@ img {
     padding: 8px 7px;
     background: #fff;
     margin-bottom: 20px;
+}
+.block-project .project-item .project-img img {
+    width: 100%;
 }
 .block-project .project-item .project-desc {
     margin-top: 10px;
