@@ -74,28 +74,28 @@
     // Scroll Tab for Langding Page
     // if ($(window).width() > 1024 && $(window).width() < 1339) {}
 
-    $(function() {
-        var menu_left_scroll = $('.nav-tabs-langding');
-        var hieghtThreshold = $(".block-langding .block-content").offset().top;
-        var hieghtThreshold_end  = $(".block-langding .block-content").offset().top + $(".block-langding .block-content").height();
-        $(window).scroll(function() {
-            var scroll = $(window).scrollTop();
-            if (scroll >= hieghtThreshold && scroll <=  hieghtThreshold_end) {
-                menu_left_scroll.addClass('fixed');
-            } else {
-                menu_left_scroll.removeClass('fixed');
-            }
-        });
+    // $(function() {
+    //     var menu_left_scroll = $('.nav-tabs-langding');
+    //     var hieghtThreshold = $(".block-langding .block-content").offset().top;
+    //     var hieghtThreshold_end  = $(".block-langding .block-content").offset().top + $(".block-langding .block-content").height();
+    //     $(window).scroll(function() {
+    //         var scroll = $(window).scrollTop();
+    //         if (scroll >= hieghtThreshold && scroll <=  hieghtThreshold_end) {
+    //             menu_left_scroll.addClass('fixed');
+    //         } else {
+    //             menu_left_scroll.removeClass('fixed');
+    //         }
+    //     });
 
-        $(".nav-tabs-langding li").click(function() {
-            if ($(".nav-tabs-langding li")) {
+    //     $(".nav-tabs-langding li").click(function() {
+    //         if ($(".nav-tabs-langding li")) {
                 
-            }
-            $('body,html').animate({
-                scrollTop : 0
-            }, 'slow');
-        });
-    });
+    //         }
+    //         $('body,html').animate({
+    //             scrollTop : 0
+    //         }, 'slow');
+    //     });
+    // });
 
     // Adv
     $(function() {
@@ -106,10 +106,10 @@
         var header = $(".header").height();
         var nav = $("#mainNav").height();
         var slide_home = $(".block-slider-home").height();
-        var block_search = $(".block-search").height();
+        // var block_search = $(".block-search").height();
         var abc = $("#site-main .container").width();
 
-        var Top1 = header + nav + slide_home + block_search + 28;
+        var Top1 = header + nav + slide_home - 5;
         var Top2 = header + nav + 10;
         var position = ((width_screen - abc)/2) - 117;
 
