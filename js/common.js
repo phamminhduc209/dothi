@@ -109,7 +109,7 @@
         // var block_search = $(".block-search").height();
         var abc = $("#site-main .container").width();
 
-        var Top1 = header + nav + slide_home - 5;
+        var Top1 = header + nav + slide_home - 35;
         var Top2 = header + nav + 10;
         var position = ((width_screen - abc)/2) - 117;
 
