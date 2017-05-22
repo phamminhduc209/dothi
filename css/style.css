@@ -527,6 +527,7 @@ img {
     position: relative;
     background: #fff;
     min-height: 313px;
+    overflow: hidden;
 }
 .block-news-default .block-news-default-item .block-thumb img {
     width: 100%;
@@ -2751,6 +2752,28 @@ h3.page-title-child {
 }
 .block-table-nobor-tab .table>tbody>tr>td label {
     margin-bottom: 0;
+}
+
+/*===== Alert ======*/
+.block-alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+}
+.block-alert-danger li {
+    margin-bottom: 5px;
+}
+.block-alert-danger li:last-child {
+    margin-bottom: 0;
+}
+
+.block-alert-success {
+    font-size: 14px;
+    padding: 10px;
+    font-weight: bold;
 }
 
 /*===== Back To Top ======*/
