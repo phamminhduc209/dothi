@@ -71,6 +71,32 @@
         $(a.target).prev('.panel-heading').removeClass('active');
     });
 
+    // Scroll Tab for Langding Page
+    // if ($(window).width() > 1024 && $(window).width() < 1339) {}
+
+    $(function() {
+        var menu_left_scroll = $('.nav-tabs-langding');
+        var hieghtThreshold = $(".block-langding .block-content").offset().top;
+        var hieghtThreshold_end  = $(".block-langding .block-content").offset().top + $(".block-langding .block-content").height();
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= hieghtThreshold && scroll <=  hieghtThreshold_end) {
+                menu_left_scroll.addClass('fixed');
+            } else {
+                menu_left_scroll.removeClass('fixed');
+            }
+        });
+
+        $(".nav-tabs-langding li").click(function() {
+            if ($(".nav-tabs-langding li")) {
+                
+            }
+            $('body,html').animate({
+                scrollTop : 0
+            }, 'slow');
+        });
+    });
+
     // Adv
     $(function() {
         var width_screen = $(window).width();

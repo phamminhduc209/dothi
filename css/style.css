@@ -2478,6 +2478,23 @@ img {
 }
 
 /*===== Langding Page ======*/
+.nav-tabs-langding.fixed {
+    padding: 0;
+    position: fixed;
+    z-index: 2;
+    top: 43px;
+    left: 0;
+    width: 0;
+    background: #fff;
+    -webkit-box-shadow: 2px 0px 15px 2px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 2px 0px 15px 2px rgba(0, 0, 0, 0.29);
+    box-shadow: 2px 0px 15px 2px rgba(0, 0, 0, 0.29);
+    -webkit-transition: 0.15s linear;
+    -moz-transition: 0.15s linear;
+    -ms-transition: 0.15s linear;
+    -o-transition: 0.15s linear;
+    transition: 0.15s linear;
+}
 body.langding_page {
     background: none;
 }
