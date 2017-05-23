@@ -26,21 +26,21 @@
 @font-face {
     font-family: 'Roboto Bold';
     src: url('../fonts/roboto/Roboto-Bold.eot');
-    src: local('Roboto Bold'), url('../fonts/roboto//Roboto-Bold.ttf') format('truetype');
+    src: local('Roboto Bold'), url('../fonts/roboto/Roboto-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal
 }
 @font-face {
     font-family: 'Roboto Regular';
-    src: url('../fonts/roboto//Roboto-Regular.ttf');
-    src: url('../fonts/roboto//Roboto-Regular.eot');
-    src: url('../fonts/roboto//Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto//Roboto-Regular.TTF') format('truetype')
+    src: url('../fonts/roboto/Roboto-Regular.ttf');
+    src: url('../fonts/roboto/Roboto-Regular.eot');
+    src: url('../fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto/Roboto-Regular.ttf') format('truetype')
 }
 @font-face {
     font-family: 'Roboto Condensed';
-    src: url('../fonts/roboto//RobotoCondensed-Bold.ttf');
-    src: url('../fonts/roboto//RobotoCondensed-Bold.eot');
-    src: url('../fonts/roboto//RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto//RobotoCondensed-Bold.TTF') format('truetype')
+    src: url('../fonts/roboto/RobotoCondensed-Bold.ttf');
+    src: url('../fonts/roboto/RobotoCondensed-Bold.eot');
+    src: url('../fonts/roboto/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto/RobotoCondensed-Bold.ttf') format('truetype')
 }
 
 /*===== Layout Style =====*/
@@ -217,6 +217,13 @@ img {
     transition: 0.3s;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
 }
+.sticky-wrapper.is-sticky .fix-tabs {
+    z-index: 9;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+}
 #header .menu {
     position: relative;
 }
@@ -239,10 +246,9 @@ img {
     color: #fff;
     padding: 0 12px;
     line-height: 43px;
-    font-family: 'Roboto Condensed',Arial,Helvetica,sans-serif !important;
+    font-family: 'Roboto Condensed';
     text-decoration: none;
     font-size: 15px;
-    font-weight: bold;
     text-align: center;
 }
 .menu .navbar-nav .submenu {
@@ -324,6 +330,7 @@ img {
 .navbar-default .navbar-toggle {
     background-color: transparent !important;
     border: none !important;
+    padding: 0;
 }
 .navbar-default .navbar-toggle i {
     color: #fff;
@@ -1856,11 +1863,10 @@ img {
 }
 .block-project .project-item .project-desc .project-address span {
     color: #015f95;
-    width: 70px;
     float: left;
 }
 .block-project .project-item .project-desc .project-address p {
-    padding-left: 70px;
+    padding-left: 45px;
     color: #424242;
 }
 
