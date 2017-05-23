@@ -541,18 +541,6 @@
 		border-bottom: solid 2px #fff;
 		border-left: solid 2px #fff;
 	}
-	.block-langding .nav-tabs li .tabs-item-logo .icon {
-		display: block;
-	}
-	.block-langding .nav-tabs li .icon, 
-	.block-langding .nav-tabs li .icon .fa {
-		display: none;
-	}
-	.block-langding .nav-tabs li .tabs-item-logo { height: 40px; }
-	.block-langding .nav-tabs>li>a { height: 40px; line-height: 40px; }
-	.block-langding .nav-tabs li a.Payment {
-    line-height: 40px;
-}
 }
 
 /*----------------

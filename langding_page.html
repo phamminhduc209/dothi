@@ -141,7 +141,8 @@
 	<section class="block-main main" id="site-main">
 		<div class="block block-langding">
 			<div class="container">
-				<div class="block block-title">
+				<!-- <div class="icon-bars-op5"><i class="fa fa-bars" aria-hidden="true"></i></div> -->
+				<div class="block block-title block-in-res">
 					<ul class="nav nav-tabs nav-tabs-langding fix-tabs" id="nav-tabs-langding" role="tablist">
 						<li>
 							<p class="tabs-item-logo">
@@ -905,6 +906,7 @@
 			</div>
 		</div>
 	</div><!-- /advLeft -->
+
 	<div id="advRight">
 		<div class="banner_scroll">
 			<div class="item">
@@ -990,6 +992,11 @@
 		});
 
 		$(function() {
+			// Menu Page op5
+		    // $(".icon-bars-op5 .fa-bars").on('click', function(){
+		    //     $( this ).parent().toggleClass("has-open");
+		    //     $(".block-in-res").toggleClass("has-open");
+		    // });
 	        $(".nav-tabs-langding li").click(function() {
 	            $('body,html').animate({
 	                scrollTop : 0
