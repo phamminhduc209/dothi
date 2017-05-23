@@ -1938,6 +1938,36 @@ img {
     border-bottom: 1px solid #cacaca;
     padding: 15px 0;
 }
+.footer .block-menu-bottom-bottom label {
+    margin-bottom: 0;
+}
+.footer .block-menu-bottom-bottom ul li {
+    position: relative;
+    padding-left: 10px;
+    text-decoration: none;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.footer .block-menu-bottom-bottom ul li:before {
+    content: "\f0da";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footer .block-menu-bottom-bottom ul li:hover {
+    padding-left: 15px;
+    text-decoration: none;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.block-info-bottom {
+    background: #DDDDDD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 /*===== Block Page Article 1 ======*/
 .block-page-article-1 {
