@@ -78,9 +78,10 @@
         var Advscroll_left = $('#advLeft');
         var Advscroll_right = $('#advRight');
 
-        var header = $(".header").height();
+        var header = $("#header").height();
         var nav = $("#mainNav").height();
         var slide_home = $(".block-slider-home").height();
+        console.log(slide_home);
         // var block_search = $(".block-search").height();
         var abc = $("#site-main .container").width();
 
