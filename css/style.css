@@ -2842,3 +2842,27 @@ h3.page-title-child {
 .bx-wrapper .bx-controls-direction a {
     z-index: 9 !important;
 }
+
+.icon-bars-op5 {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    background: #1d5f93;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 9;
+    display: none;
+}
+.icon-bars-op5 i {
+    line-height: 45px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+/*.icon-bars-op5.has-open {
+    opacity: 0;
+    visibility: hidden;
+}*/
