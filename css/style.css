@@ -543,21 +543,21 @@ img {
 .block-news-default .block-news-list-right {
     border: 1px solid #dedede;
     background: #fff;
-    padding: 13px 13px 10px !important;
-    min-height: 325px;
-    height: 346px;
+    padding: 18px 13px 10px !important;
+    min-height: 313px;
+    height: 313px;
     overflow: hidden;
 }
 .block-news-default-right .block-news-list-right li {
     border-top: 1px solid #dedede;
-    margin-top: 9px;
-    padding-top: 9px;
+    margin-top: 5px;
+    padding-top: 6px;
     position: relative;
 }
 .block-news-default-right .block-news-list-right li:first-child {
     border: none;
     margin-top: 0;
-    padding-top: 9px;
+    padding-top: 0;
 }
 .block-news-default-right .block-news-list-right li a {
     font: normal 14px/20px tahoma;
