@@ -349,14 +349,6 @@ img {
 .block-search {
     padding: 10px 0;
     background: #fafafa;
-    /*background: #fafafa;
-    background-image: url(../images/banner.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;*/
-    /*width: 100%;*/
 }
 .block-search .block-contents {
     background: rgb(47, 105, 158);
@@ -1019,7 +1011,6 @@ img {
 .block-slider-home .owl-next {
     right: 15px;
 }
-
 .block-slider-home .owl-prev i,
 .block-slider-home .owl-next i {
     font-size: 30px;
@@ -1853,6 +1844,8 @@ img {
     display: block;
     color: #2a475d;
     font: bold 16px/18px arial;
+    height: 36px;
+    overflow: hidden;
 }
 .block-project .project-item .project-desc .project-name h4 a:hover {
     text-decoration: underline;
@@ -1860,6 +1853,8 @@ img {
 .block-project .project-item .project-desc .project-address {
     padding: 3px 0;
     font: normal 13px/18px arial;
+    height: 42px;
+    overflow: hidden;
 }
 .block-project .project-item .project-desc .project-address span {
     color: #015f95;

@@ -80,18 +80,16 @@
 
         var header = $("#header").height();
         var nav = $("#mainNav").height();
-        var slide_home = $(".block-slider-home").height();
-        // var block_search = $(".block-search").height();
         var abc = $("#site-main .container").width();
 
-        var Top1 = header + nav + slide_home - 33;
+        var Top1 = header + nav + 415;
         var Top2 = header + nav + 10;
         var position = ((width_screen - abc)/2) - 117;
 
         var Top = $(".main").offset().top;
         var Top_end  = $(".main").offset().top + $(".main").height();
 
-        if($(".page_home")){
+        if($(".page_homes")){
             Advscroll_left.css({
                 "top": Top1,
                 "left":  position,
