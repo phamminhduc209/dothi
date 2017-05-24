@@ -60,7 +60,6 @@
 
     /*  [ Sticky Menu ] */
     $('.fix-header ').sticky({ topSpacing: 0 });
-    $('.fix-tabs ').sticky({ topSpacing: 43 });
 
     /*  Collapse */
     $('.collapse.in').prev('.panel-heading').addClass('active');
