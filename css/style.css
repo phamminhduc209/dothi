@@ -641,6 +641,11 @@ img {
 .news-new-item .news-new-item-description .description-info .location {
     background: url(../images/icon-location.png) no-repeat 0 4px;
 }
+.news-new-item .news-new-item-description .description-info .id-post i {
+    padding-right: 10px;
+    font-size: 15px;
+    color: #aaa;
+}
 .news-new-item .date {
     position: absolute;
     bottom: 0;
@@ -2896,3 +2901,25 @@ h3.page-title-child {
     opacity: 0;
     visibility: hidden;
 }*/
+
+/*===== Breadcrumb =====*/
+.block-breadcrumb-page .breadcrumb {
+    padding: 10px;
+    margin: 10px 0;
+    background: #eaeaea;
+}
+.block-breadcrumb-page .breadcrumb li, .block-breadcrumb-page .breadcrumb a {
+  color: #000000;
+  font-family: 'Roboto Condensed';
+  font-size: 15px;
+}
+.block-breadcrumb-page .breadcrumb > li + li:before {
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-size: 16px;
+  padding: 0 10px;
+  color: #000000;
+}
+.block-breadcrumb-page .breadcrumb li.active , .block-breadcrumb-page .breadcrumb .active a {
+  color: #1d5f93;
+}
