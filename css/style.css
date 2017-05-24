@@ -1556,6 +1556,11 @@ img {
 }
 
 /* Tab Detail */
+.cate-news-detail-tab .nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+    width: 135px;
+}
 .cate-news-detail-tab .nav-tabs>li>a.imgdetail,
 .cate-news-detail-tab .nav-tabs>li>a.mapdetail {
     color: #000;
@@ -1806,8 +1811,9 @@ img {
     margin-top: 8px;
 }
 .cate-news-detail-price li {
-    display: inline-block;
-    margin-right: 25px;
+    float: left;
+    width: 170px;
+    margin-right: 10px;
 }
 .cate-news-detail-price li span {
     font: bold 16px tahoma;
