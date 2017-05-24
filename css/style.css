@@ -2885,6 +2885,7 @@ h3.page-title-child {
 .block-breadcrumb-page .breadcrumb li, .block-breadcrumb-page .breadcrumb a {
   color: #1d5f93;
   font-size: 15px;
+  font-family: "Roboto Regular";
 }
 .block-breadcrumb-page .breadcrumb > li + li:before {
   content: "\f105";
