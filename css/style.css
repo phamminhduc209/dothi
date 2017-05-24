@@ -2883,8 +2883,7 @@ h3.page-title-child {
     background: #eaeaea;
 }
 .block-breadcrumb-page .breadcrumb li, .block-breadcrumb-page .breadcrumb a {
-  color: #000000;
-  font-family: 'Roboto Condensed';
+  color: #1d5f93;
   font-size: 15px;
 }
 .block-breadcrumb-page .breadcrumb > li + li:before {
@@ -2895,5 +2894,5 @@ h3.page-title-child {
   color: #000000;
 }
 .block-breadcrumb-page .breadcrumb li.active , .block-breadcrumb-page .breadcrumb .active a {
-  color: #1d5f93;
+  color: #000000;
 }
