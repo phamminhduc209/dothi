@@ -141,9 +141,8 @@
 	<section class="block-main main" id="site-main">
 		<div class="block block-langding">
 			<div class="container">
-				<div class="block block-title block-in-res">
-					<div class="icon-bars-op5"><i class="fa fa-bars"></i></div>
-					<ul class="nav nav-tabs nav-tabs-langding fix-tabs" id="nav-tabs-langding" role="tablist">
+				<div class="block block-title">
+					<ul class="nav nav-tabs nav-tabs-langding" id="nav-tabs-langding" role="tablist">
 						<li>
 							<p class="tabs-item-logo">
 								<i class="icon">
@@ -967,9 +966,6 @@
 				var widthItem = width/childDivCount;
 				$('#nav-tabs-langding li').css("width", widthItem);
 				$('#nav-tabs-langding li').css("width", widthItem);
-		        if ($('#nav-tabs-langding').hasClass("fixed")) {
-		            $('#nav-tabs-langding li').css("width", widthItem);
-		        }
 		   });
 		});
 
@@ -1000,27 +996,6 @@
 				$(this).removeClass('is-active');
 			});
 		});
-
-		$(function() {
-	        // Menu Page op5
-			$(".icon-bars-op5").on('click', function(){
-				$( this ).toggleClass('has-open');
-				$(".fix-tabs").toggleClass("has-open");
-				$("body").toggleClass("menu-open");
-			});
-			$(".block-in-res .sticky-wrapper.is-sticky .fix-tabs.has-open:after").click(function() {
-				alert("aaa");
-			});
-			$(".nav-tabs-langding li").click(function() {
-	            $('body,html').animate({
-	                scrollTop : 0
-	            }, 'slow');
-	            $(".icon-bars-op5").toggleClass("has-open");
-	            $(".fix-tabs").toggleClass("has-open");
-	            $("body").toggleClass("menu-open");
-	        });
-
-	    });
 	</script>
 
 </body>
