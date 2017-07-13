@@ -48,7 +48,7 @@
 	}
 	#advLeft,
 	#advRight {
-		display: none;
+		display: none !important;
 	}
 	.block-news-new li.news-new-item .news-new-item-description {
 	    width: 71%;
